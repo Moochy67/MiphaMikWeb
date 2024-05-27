@@ -1,0 +1,852 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Bob Reselman - mimik Technology Inc</title>
+	<atom:link href="https://mimik.com/author/bob/feed/" rel="self" type="application/rss+xml" />
+	<link>https://mimik.com</link>
+	<description>Your Competitive Edge</description>
+	<lastBuildDate>Fri, 08 Dec 2023 09:18:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.5.3</generator>
+
+<image>
+	<url>https://mimik.com/wp-content/uploads/2023/10/cropped-Favicon-mimik-Favicon-mimik-525 × 525-white-32x32.png</url>
+	<title>Bob Reselman - mimik Technology Inc</title>
+	<link>https://mimik.com</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>A primer to geolocation detection on the Edge</title>
+		<link>https://mimik.com/a-primer-to-geolocation-detection-on-the-edge/</link>
+		
+		<dc:creator><![CDATA[Bob Reselman]]></dc:creator>
+		<pubDate>Thu, 26 Jan 2023 08:03:51 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Bob Reselman]]></category>
+		<guid isPermaLink="false">https://stg-2x.mimik.com/?p=78891</guid>
+
+					<description><![CDATA[<p>There are two types of devices in Edge Computing, fixed and mobile.</p>
+<p>The post <a href="https://mimik.com/a-primer-to-geolocation-detection-on-the-edge/">A primer to geolocation detection on the Edge</a> first appeared on <a href="https://mimik.com">mimik Technology Inc</a>.</p>]]></description>
+										<content:encoded><![CDATA[<p>There are two types of devices in Edge Computing, fixed and mobile. Examples of fixed devices are red-light traffic cameras, internet-aware refrigerators, smart TVs, and cash registers in a point-of-sale system. Examples of mobile devices are tablets, cell phones, and forklifts. Fixed devices are, as the name implies, stationery. They don’t move around. For example, once a traffic camera is installed on a city’s street corner, it doesn’t move. Same with an internet-aware refrigerator; you put it in, plug it in and connect it to the internet. The fridge doesn’t move around your home. It stays anchored in your kitchen.</p>
+
+
+
+<p>Suppose for some reason, you need to make the location of your internet-enabled refrigerator known to outside parties. In that case, the typical process is to do some sort of online registration with the manufacturer in which you associate the refrigerator’s serial number with your physical address. Then, messages sent over the internet from the refrigerator can bind the machine’s IP address to the serial number. All this information is stored in a database somewhere. Hence, the physical location of the refrigerator is discoverable.</p>
+
+
+
+<p>Mobile devices, on the other hand, do move around. Thus, determining their location is not a matter of doing an address lookup in a database. The device needs to figure out where it is as its location changes. The precision of determining the location will vary, anywhere from a few inches to a few kilometers, depending on how the location of the device is detected. In some cases, a margin of error of a few kilometers might not matter. In other cases, being off by a kilometer can be a catastrophe. Thus, understanding the different ways of detecting the location of an edge device matters. Hence, the purpose of this article: to describe the various techniques for detecting the geolocation of edge devices.</p>
+
+
+
+<p>In this article, we’re going to examine three techniques. The first is determining a device’s location using an IP address. The second is using GPS (Global Positioning System) and Differential Global Positioning System (DGPS). The third way we’re going to examine is an interesting alternative to the other two. Each method has benefits and tradeoffs that are worth understanding.</p>
+
+
+
+<p>But before we go into these details, it is helpful to understand the essential principle of location detection: a subject never really knows where it is. Some sort of external, objective reference mechanism is needed.</p>
+
+
+
+<p>Let’s take a moment to explore the principle.</p>
+
+
+
+<p>Imagine that you closed your eyes to take a brief nap. Then, you wake up to find yourself lying in a country meadow. All you can see are birds and flowers and a tree or two. All that’s about you is nature. That’s the good news. The bad news is you don’t know where you are. Your surroundings are unfamiliar. There are no road signs around. You don’t have your cell phone with you, so you can’t do an automatic discovery using GPS.</p>
+
+
+
+<p>You start walking through the meadow. A stranger approaches and you ask her where you are. She says, “Clarke County”. You have no idea of where Clarke County is, and you don’t have the lookup capabilities to figure it out. So, you still don’t know where you are.</p>
+
+
+
+<p>You keep walking and come across another stranger. You ask the same question, “Where am I?” He responds, “Iowa.” You put two and two together and infer that you are in Clarke County, IA. You know where Iowa is, but you still have no idea where Clarke County is. The fact is that while you have a general idea of where you are, you could be in eastern, central, or western Iowa. Your operational margin of error is hundreds of miles. To have a clearer idea, you’d need some objective reference instrument, for example, a map of Iowa that includes a generally accepted coordinate system.</p>
+
+
+
+<p>The interesting thing about all this is that absent any referencing mechanism and a quantitative way to interpret the information from that mechanism, the only thing you know about your location at any given moment is that you are “here.” The same is true of edge devices. You need an external agent to tell you where the device is and a frame reference to understand the information you’re being given. In short, if you want to know where you are, you need a map and know how to use the coordinate system supported by that map.</p>
+
+
+
+<p>This may seem tangential in terms of detecting the location of edge devices. Still, it is an important understanding, particularly when considering very sophisticated types of edge devices, for example, interplanetary satellites.</p>
+
+
+
+<p>Now that we’ve covered this basic understanding let’s look at the first way to detect the location of an edge device: using a device’s IP address.</p>
+
+
+
+<h2 class="wp-block-heading">Geolocation detection using an IP Address</h2>
+
+
+
+<p>Every device on the Internet has an IP address. It doesn’t matter if the device is on a public network or running privately behind a firewall or cable modem; it will have an IP address. That IP address does not appear by magic. It’s assigned by another mechanism. That mechanism can be a human or script that manually assigns an IP address, or the IP address can be assigned dynamically within a predefined range of addresses by a DNS server. For the most part, the physical location of the device to which the IP address is assigned can be discovered by doing a lookup of the IP address against some authority that keeps track of public IP addresses and their location, for example,&nbsp;<a href="https://www.arin.net/">ARIN</a>&nbsp;or&nbsp;<a href="https://www.ripe.net/collections-area/ripe-community/what-is-ripe">RIPE</a>. Thus, it’s possible to do a general estimation of the geographical location of an IP address. But these calculations are typically rough and can have a wide margin of error.</p>
+
+
+
+<p>In order to make the point, we conducted an experiment in which we submitted a subject’s IP address to a variety of IP address lookup services using the tool&nbsp;<a href="https://dnschecker.org/ip-location.php">DNSChecker.org</a>. The goal was to determine the physical location that corresponded to the submitted IP. The IP address we used was 24.80.2.109. The results of the lookup by the various IP address lookup services are displayed in Table 1 below, along with the distance from the actual location of the submitted IP address.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter"><img decoding="async" src="https://stg-2x.mimik.com/wp-content/uploads/2023/01/table-768x290.png" alt=""/></figure></div>
+
+
+<p><strong>Table 1: The physical latitude and longitude for the same IP according to a variety of lookup services</strong></p>
+
+
+
+<h2 class="wp-block-heading">Geolocation detection using GPS</h2>
+
+
+
+<p>The way that the&nbsp;<a href="https://www.gps.gov/systems/gps/performance/accuracy/">Global Positions System</a>&nbsp;(GPS) works is that there are 27 GPS satellites orbiting the Earth, of which 24 satellites are active, while the remaining three satellites provide backup in case one of the active satellites fails. These satellites emit radio waves that are intercepted by a GPS receiver on the ground.</p>
+
+
+
+<p>The GPS receiver uses radio waves from three satellites to triangulate the receiver’s location. The location of the edge device can be determined based on latitude, longitude, and elevation, with a margin of error of six feet in 95% of cases.</p>
+
+
+
+<p>Most modern cell phones and tablets have a GPS receiver built in. In cases where an edge device does not have one built-in, a GPS receiver can be attached. Adding an attachment is typical for enabling GPS on a small computer such as a Raspberry Pi.</p>
+
+
+
+<p>Using GPS detection helps determine the location of a passenger pickup for a rideshare application. However, it will only give you the degree of accuracy you need if you’re trying to determine how close you are to another car when driving down the highway. As alluded to above, a 6 ft margin of error in heavy traffic on a major highway can result in tragedy.</p>
+
+
+
+<p>However, there is a version of GPS that provides a finer grainer of detection. This version is the&nbsp;<a href="https://en.wikipedia.org/wiki/Differential_GPS">Differential Global Positioning System</a>&nbsp;(DGPS).</p>
+
+
+
+<p>DGPS is a network of fixed ground-based reference stations that broadcast the difference between the location reported by the GPS satellite system and known fixed positions. These stations broadcast the difference between the&nbsp;<a href="https://www.sciencedirect.com/topics/engineering/pseudorange">pseudoranges</a>&nbsp;provided by the satellites orbiting the Earth and the actual, internally computed pseudoranges. Also, the receiver stations may correct their pseudoranges by the same amount. The digital correction signal is typically broadcast locally over a shorter-range version of ground-based transmitters. DGPS has a margin of error that ranges from 15 meters (49 ft), which is the high end of GPS accuracy, to about 1–3 centimeters (0.39–1.18 in) which is well below the 6 ft low-end range of GPS. Thus, in many cases, a DGPS receiver can detect an edge device with an accuracy of inches. This type of accuracy is very acceptable for making a pizza delivery to a room in a college dormitory. However, it’s still a risk when a self-driving vehicle travels a highway at high speed. Fortunately, when it comes to effective location detection for automobiles driving at high speeds, there is an alternative approach: sensors.</p>
+
+
+
+<h2 class="wp-block-heading">Alternative Approach to Device Location</h2>
+
+
+
+<p>Let’s revisit the above mentioned principle: a subject never knows its location. It needs some external objective reference mechanism to make the determination. Street signs, IP address lookup, and GPS/DGPS provide such a reference. Being told where you are is an important aspect of location detection. But there is another way to look at things. While a subject may not be able to determine where it is, it can determine what’s nearby and how far away external objects are. All it needs to do is look around. Hence the benefit of using an optical sensor. After all, what are your eyes if not an optical sensor?</p>
+
+
+
+<p>Self-driving&nbsp;<a href="https://www.udacity.com/blog/2021/03/how-self-driving-cars-work-sensor-systems.html">cars use optical sensors</a>, as do&nbsp;<a href="https://www.vishay.com/docs/48708/ig18692481_vacuum_cleaner_robots.pdf">robotic vacuum cleaners</a>. You can&nbsp;<a href="https://play.google.com/store/apps/details?id=com.caramba.easymeasure&amp;hl=fr&amp;gl=US">add software</a>&nbsp;to your cellphone to enable distance determination utilizing the phone’s camera as the optical sensor.</p>
+
+
+
+<p>Optical sensors become particularly important for automated IoT devices that need to work in close proximity to one another, for example, robotic forklifts in a warehouse.</p>
+
+
+
+<p>Combining optical sensors with GPS/DGPS tracking can provide the level of detail required for highly accurate location detection of edge devices. You don’t need to know where you are in order to make that determination; all you need to know is how far away something else is. It’s an intriguing approach to location detection that’s still evolving.</p>
+
+
+
+<h2 class="wp-block-heading">Putting It All Together</h2>
+
+
+
+<p>Edge computing and edge devices will continue to grow as a presence both on the Internet and in the physical world.&nbsp;<a href="https://www.globenewswire.com/news-release/2022/03/03/2396216/0/en/Edge-Computing-Market-Size-Worth-61-14-Billion-by-2028-CAGR-38-4-Grand-View-Research-Inc.html">Grand View Research, Inc reports</a>&nbsp;that the edge computing market is expected to have a compound annual growth rate (CAGR) of 38.4% and reach a market size of $61.14 bn USB by 2028. These are not trivial numbers.</p>
+
+
+
+<p>Many, if not most, of those edge devices will need to know where they are to do the work they’re intended to do. This means that location detection is not a “nice to have,” and it’s a mission-critical requirement. However, as described in this article, there’s a lot of variety in location detection techniques. It is important to understand what these techniques are, how they work, and how they’re best used. In some cases, it’s a matter of life and death. As you can see, there’s a lot to know, and the information provided here is a good starting point from which to grow your understanding.</p>
+
+
+
+<p>A good many, if not most of those edge devices, will need to know where they are in order to do the work they’re intended to do. This means that location detection is not a “nice to have”. It’s a mission critical requirement. However, as described in this article, there’s a lot of variety in location detection techniques. Understanding what these techniques are, how they work and how they’re best used is important information to have. In some cases, it’s a matter of life and death. As you can see, there’s a lot to know. The information provided here is a good starting point from which to grow your understanding.</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://stg-2x.mimik.com/wp-content/uploads/2022/07/lamp.png" alt=""/></figure>
+
+
+
+<h2 class="wp-block-heading">Did you know:</h2>
+
+
+
+<p>Powered by mimik’s edgeEngine, the Ad Hoc Service Mesh technology enable discovery, connection and communication among node (devices) that can belong to three types of clusters. The cluster types are called Network, Account and Proximity.</p>
+
+
+
+<p><strong>Network cluster</strong>&nbsp;– nodes that are part of the same network.</p>
+
+
+
+<p><strong>Account cluster</strong>&nbsp;– nodes that are part of the same user account.</p>
+
+
+
+<p><strong>Proximity cluster</strong>&nbsp;– nodes that are close to one another in terms of physical geo-location.</p>
+
+
+
+<p>Machines and devices in an Account and Proximity cluster can reside anywhere. Their association to one another is beyond the boundaries of a network.</p>
+
+
+
+<p><a role="button" href="https://devdocs.mimik.com/key-concepts/06-index"><br>Learn More<br></a></p><p>The post <a href="https://mimik.com/a-primer-to-geolocation-detection-on-the-edge/">A primer to geolocation detection on the Edge</a> first appeared on <a href="https://mimik.com">mimik Technology Inc</a>.</p>]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Understanding the limits of replication and redundancy under edge architectures</title>
+		<link>https://mimik.com/understanding-the-limits-of-replication-and-redundancy-under-edge-architectures/</link>
+		
+		<dc:creator><![CDATA[Bob Reselman]]></dc:creator>
+		<pubDate>Tue, 08 Nov 2022 16:10:24 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Bob Reselman]]></category>
+		<guid isPermaLink="false">https://stg-2x.mimik.com/?p=77236</guid>
+
+					<description><![CDATA[<p>Replication and redundancy have been key components of computing for a long time, since the heyday of the mainframe. Back then, if a mainframe lost power, everything stopped. Organizations addressed this risk by keeping generators and power supplies on hand to supply redundant electrical backups. If power from the main power grid failed, the generators took over. No electricity was lost.</p>
+<p>The post <a href="https://mimik.com/understanding-the-limits-of-replication-and-redundancy-under-edge-architectures/">Understanding the limits of replication and redundancy under edge architectures</a> first appeared on <a href="https://mimik.com">mimik Technology Inc</a>.</p>]]></description>
+										<content:encoded><![CDATA[<h2 class="wp-block-heading">Executive Summary</h2>
+
+
+
+<ul>
+<li>Edge computing and IoT-based distributed architectures differ from architectures based on orchestration frameworks targeted for implementation within a data center.</li>
+
+
+
+<li>Edge computing and IoT architectures are intended for dedicated devices used over a wide geography.</li>
+
+
+
+<li>As such, the redundancy and replications techniques used for systems hosted in data centers do not apply.</li>
+
+
+
+<li>In order to address this difference, architects need to alter the way they think about redundancy and replication within the edge computing paradigm.</li>
+</ul>
+
+
+
+<p>Replication and redundancy have been key components of computing for a long time, since the heyday of the mainframe. Back then, if a mainframe lost power, everything stopped. Organizations addressed this risk by keeping generators and power supplies on hand to supply redundant electrical backups. If power from the main power grid failed, the generators took over. No electricity was lost.</p>
+
+
+
+<p>Mainframes also store data exclusively on or within the machine. Thus, if the storage mechanism failed, data was lost. So companies backed up the data to tape and this was an early form of data replication.</p>
+
+
+
+<p>When personal computers first appeared, they, too,&nbsp; used the same redundancy and replication techniques used for mainframes. A user had an uninterrupted power supply close by in case of power failure. Data was replicated to tape or floppy drive.</p>
+
+
+
+<p>Things changed when networking PCs together made distributed computing possible. This was particularly telling in database technology. Companies networked a number of computers together. One computer hosted the database server. Other computers acted as file servers that stored the data the database used.</p>
+
+
+
+<p>Eventually, database technology matured to the point where the database was smart enough to replicate data among a variety of machines. Database technology progressed even further. Multiple databases that had the same processing logic were placed behind a load balancer – a traffic cop, if you will. The load balancer routed incoming traffic among the various redundant database servers. This redundancy avoided overloading the system.</p>
+
+
+
+<p>Redundancy and replication have withstood the test of time. Both are used extensively today, most noticeably with applications that are hosted in a data center and accessed over the internet. Yet, as popular as replication and redundancy are, they are not without limits. These limitations become particularly apparent when working with edge computing and the Internet of Things.</p>
+
+
+
+<p>Distributed systems at the edge are not the same as distributed systems that are hosted within a data center. Edge computing is a new approach to machine distribution that requires new thinking. This difference requires those designing distributed applications for edge computing to reconceptualize replication and redundancy.</p>
+
+
+
+<p>The purpose of this article is to examine new ways to think about replication and redundancy as it relates to distributed edge computing. The place to start is to understand the essential difference between the traditional approach to distributed computing, which focuses on the data center, and distributed computing on edge devices and the Internet of Things.</p>
+
+
+
+<h2 class="wp-block-heading">Typical redundancy is a distributed system in a data center</h2>
+
+
+
+<p>A typical approach to distributed computing is to use a pattern in which replicas of a particular algorithm are represented by a service layer. Then, the service becomes one of many other services represented by different algorithms that are accessed via some sort of gateway mechanism. Each service has load balancing capabilities that ensures that no one instance of its underlying algorithms are overloaded. (See Figure 1.)</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter"><img decoding="async" src="https://stg-2x.mimik.com/wp-content/uploads/2022/11/Picture1.png" alt=""/></figure></div>
+
+
+<p><b>Figure 1: A typical pattern in distributed architecture in which redundancy ensures availability and efficient performance</b></p>
+
+
+
+<p>Kubernetes uses this type of distribution pattern, as does Docker Swarm.</p>
+
+
+
+<p>The benefit of this pattern is that using redundant algorithms ensures resilience. If one of the instances goes down, other identical instances of the algorithm are still available to provide computing logic. And, if automatic replication is in force, when an instance goes down, the replication mechanisms can try to resurrect it. If the instance can’t be reinstated, the replication mechanism will create a new one to take its place. Replication of this type is used by Kubernetes with its Deployment resource.</p>
+
+
+
+<p>As powerful as this type of architecture is, it’s not magical. A lot of work needs to go into getting and keeping an architecture of this type up and running. First and foremost, the various components that make up the system need to know a good deal about each other. At the logical level, a service needs to know about its algorithms, and the gateway mechanism needs to know about the services it’s supporting. At the physical level, service and algorithms reside on separate machines; therefore, access between and among machines needs to be granted accordingly. This can become an arduous task. Imagine an architecture as the one shown below in Figure 2. The service lives on one machine, and each instance and its algorithms live on a distinct machine. Should one machine go down, then another one needs to replace it. In the old days, this meant that someone actually had to go down to a data center and physically install the machine and then add it to the network.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter"><img decoding="async" src="https://stg-2x.mimik.com/wp-content/uploads/2022/11/Picture2.png" alt=""/></figure></div>
+
+
+<p><b>Figure 2: Replication can be very hard to support at the hardware level, particularly when a new machine needs to be added to the system.</b></p>
+
+
+
+<p>Of course, modern distributed technologies have evolved to the point where machine replacement means nothing more than spinning up a virtual machine on a host computer and then adding that VM to the network. However, while automation will do the work, the laws of time and space still exist. It takes time to spin up the VM, and that new VM needs to be added to the network and made available to the application.Fortunately, orchestration technologies for Linux containers, most notably Kubernetes, have significantly reduced the risk of large-scale failure, even at the hardware level. However, while this type of pattern works well within the physical confines of a data center or among many data centers, systems that rely on redundancy and replication experience significant limitations when it comes to edge computing.</p>
+
+
+
+<h2 class="wp-block-heading">The limits of redundancy and replication in edge architecture</h2>
+
+
+
+<p>The essential idea of edge computing is that a remote device has the ability to execute predefined computational logic and also communicate to other devices to do work. One of the more common examples of edge computing is the red-light traffic camera.</p>
+
+
+
+<p>A municipality places a camera at a traffic intersection controlled by a red-light. When a motor vehicle runs a red light, the camera has the intelligence to detect the violation and take a photo of the offender. Also, the device is able to send to another computer that acts as a data collector the photo of the offending vehicle along with some metadata describing the time of the violation. The collector can either process the photo and metadata on its own or pass it all on to other intelligence that can do the analysis. (See Figure 3, below.)</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter"><img decoding="async" src="https://stg-2x.mimik.com/wp-content/uploads/2022/11/Picture3.png" alt=""/></figure></div>
+
+
+<p><b>Figure 3: Red-light traffic cameras are a commonplace example of edge computing.</b></p>
+
+
+
+<p>What distinguishes the red-light traffic camera as an edge device is that it has intelligence. Unlike a closed circuit television system in which the camera does nothing more than transmit an ongoing video signal back to a television monitor in another location, a red-light traffic camera understands some of what it sees to make law enforcement decisions. There is no human evaluating the video transmission. Computational intelligence does it all. Cameras are distributed above the city, and each camera has the ability to communicate back to a central collector. Thus, you can think of red-light camera systems as distributed architecture.</p>
+
+
+
+<p>But, while a red-light camera system is indeed a type of distributed architecture, it does have a significant shortcoming. Such a system is incapable of supporting automated redundancy and replication.</p>
+
+
+
+<p>Think about it.</p>
+
+
+
+<p>Should the red-light camera on the corner of Main St. and 6th Ave go offline, that capability for monitoring traffic goes away too. No red-light violations will be reported by that device until a technician goes out into the field and repairs the camera.</p>
+
+
+
+<p>So then, given the inherent limitation of this type of distributed architecture, how do we create traffic camera systems that have redundancy built in? The easiest solution is to put a number of traffic cameras at each interaction but make only one operational. If the operational camera goes offline, intelligence back on the controller will take notice that the first camera is not working and turn on the backup to take its place. (See Figure 4.)</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter"><img decoding="async" src="https://stg-2x.mimik.com/wp-content/uploads/2022/11/Picture4.png" alt=""/></figure></div>
+
+
+<p><b>Figure 4: Edge devices in the real world require real world redundancy.</b></p>
+
+
+
+<p>Having backup devices on hand is a typical way of doing redundancy in the real world. Hospitals are designed with generators that provide electricity in the event of a power failure from the public grid. Practically all industrial-strength&nbsp;<a href="https://www.cat.com/en_US/by-industry/electric-power/electric-power-industries/data-centers.html" target="_blank" rel="noopener">data centers use backup power generators</a>&nbsp;too.</p>
+
+
+
+<p>The notion of physical backup is not confined to electricity only. Professional rock bands always travel with an extra set of amplifiers to ensure that if an amplifier malfunctions on stage, a replacement is readily available to plugin. Guitarists usually have a backup guitar on hand in case a string breaks. As they say, the show must go on even in the world of edge computing.</p>
+
+
+
+<h2 class="wp-block-heading">Edge computing vs the data center</h2>
+
+
+
+<p>The most important thing to understand about edge architectures is that they are different from architectures that are intended for devices in a data center.</p>
+
+
+
+<p>These days most devices in a data center are virtualized in terms of computing resources and networking. Thus, they can be replenished easily using automation because of their virtual nature. Kubernetes can easily redirect traffic away from a failing piece of hardware. And, if the alternative hardware becomes overworked, modern provisioning software can automatically detect available hardware and spin up a new VM accordingly. Then Kubernetes can take over and create the virtual assets needed to keep things going.</p>
+
+
+
+<p>Of course, things can go very wrong quickly when a data center goes offline or a network wire gets cut by accident. However, while these cases can be catastrophic, they are rare. More often than not, failures occur among virtual devices.</p>
+
+
+
+<p>On the other hand, edge devices are real, not virtual, and a whole class of edge devices is mobile, for example, robots, tractors, forklifts, and delivery trucks. Thus, the techniques that are usual for data center replication do not apply. Replication is very much about the physical device and the geography in which it operates. For example, how do you replicate intelligence in a cell phone performing some mission-critical operation on an oil rig in the middle of the North Sea? How do you provide redundancy for a&nbsp;<a href="https://techhq.com/2022/01/robot-tractors-among-automation-storming-us-farms-in-2022/" target="_blank" rel="noopener">robotic tractor</a>&nbsp;tilling an irrigated field in a remote area of Sub-Saharan Africa? Even at a consumer level, the Internet-enabled refrigerator in my house is in my house! If it fails, I can only go across the street and use my neighbor&#8217;s if I have very generous neighbors.</p>
+
+
+
+<p>The essential question becomes, how does a company implement redundancy and replication in edge architecture?</p>
+
+
+
+<p>When designing edge architecture and architectures for IoT, it is essential to remember that these devices exist as physical entities in the world and need to be accommodated as such. There is no virtual magic to be had. If you want to build redundancy into your edge architecture, as shown in the red-light traffic camera example above, it needs to be done on the physical plane.</p>
+
+
+
+<p>You need to plan for backup devices that are readily available in terms of time and real space. This means having physical backups on hand, whether the device is a cell phone or forklift. Yes, this approach is a bit old school, but nonetheless, the solution is valid. Bringing one-size-fits-all virtualization thinking to real assets in the real world won&#8217;t work. When it comes to edge architectures, the devil is in the device. The takeaway is simple: have a physical backup on hand.</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://stg-2x.mimik.com/wp-content/uploads/2022/07/lamp.png" alt=""/></figure>
+
+
+
+<h2 class="wp-block-heading">Did you know:</h2>
+
+
+
+<p>Did you know that the hybrid edgeCloud provides the opportunity to take advantage of collaboration and resource sharing across devices?</p>
+
+
+
+<p><a href="/hybrid-edge-cloud-a-pragmatic-approach-for-decentralized-cloud-computing/" target="_blank" rel="noopener">Download the IEEE Article: &#8220;Hybrid Edge Cloud: A Pragmatic Approach for Decentralized Cloud Computing&#8221;</a></p>
+
+
+
+<p><a role="button" href="https://mimik.com/hybrid-edge-cloud-a-pragmatic-approach-for-decentralized-cloud-computing/"><br>Download<br></a></p><p>The post <a href="https://mimik.com/understanding-the-limits-of-replication-and-redundancy-under-edge-architectures/">Understanding the limits of replication and redundancy under edge architectures</a> first appeared on <a href="https://mimik.com">mimik Technology Inc</a>.</p>]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Understanding the limitations of using Kubernetes at the edge</title>
+		<link>https://mimik.com/understanding-the-limitations-of-using-kubernetes-at-the-edge/</link>
+		
+		<dc:creator><![CDATA[Bob Reselman]]></dc:creator>
+		<pubDate>Wed, 12 Oct 2022 04:29:22 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Bob Reselman]]></category>
+		<guid isPermaLink="false">https://stg-2x.mimik.com/?p=77038</guid>
+
+					<description><![CDATA[<p>Kubernetes is essentially an orchestration framework for Linux containers. Getting a Linux container to run on a cell phone is hard, really hard.</p>
+<p>The post <a href="https://mimik.com/understanding-the-limitations-of-using-kubernetes-at-the-edge/">Understanding the limitations of using Kubernetes at the edge</a> first appeared on <a href="https://mimik.com">mimik Technology Inc</a>.</p>]]></description>
+										<content:encoded><![CDATA[<p>Want to have some fun over the weekend? Try creating a Kubernetes cluster using cell phones as a farm of&nbsp;worker nodes. It’s not fun. I know. I’ve tried it.</p>
+
+
+
+<p>Kubernetes is essentially an orchestration framework for Linux containers. Getting a Linux container to run on&nbsp;a cell phone is hard, really hard. All the tools and capabilities that developers enjoy when working with a full&nbsp;installation of Linux on a X86 or even a Raspberry Pi computer are luxuries when working with a cell phone’s&nbsp;operating system. While it’s true that both the iOS and Android operating systems are derivatives of Linux, the&nbsp;stuff you need in order to run Linux containers is missing on a cell phone. Getting something as commonplace&nbsp;as an nginx container up and running on an iPhone is akin to rocket science even for someone who&nbsp;understands the details of Kubernetes. For a beginner, fuhgeddaboudit.</p>
+
+
+
+<p>Thus, no containers, no Kubernetes. It’s that simple. Wish it was easy, but it’s not. Still understanding why&nbsp;running Kubernetes on cell phones is so hard is useful information, particularly for those of us, myself included,&nbsp;who harbor such fantasies. As they say, the devil is always in the details and when it comes to running&nbsp;Kubernetes on cell phones the details count. So, let’s look at them.</p>
+
+
+
+<p>The place to start is understanding how containers run on a Linux computer.</p>
+
+
+
+<h2 class="wp-block-heading">Containers are isolated Linux processes</h2>
+
+
+
+<p>The most important thing to understand is that containers do not run under a container manager such as&nbsp;Docker or Podman. Rather, containers run as independent Linux processes that are virtually isolated from&nbsp;other processes. The container manager is a helper toward that end.</p>
+
+
+
+<p>Container isolation is created using features available in the Linux kernel. Thus, you can think of a Linux&nbsp;container as an isolated process that runs on top of the Linux kernel. (See Figure 1, below.)</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter"><img decoding="async" src="https://stg-2x.mimik.com/wp-content/uploads/2022/10/img1.png" alt=""/></figure></div>
+
+
+<p><b>Figure 1: A container a Linux process that runs in virtual isolation over the Linux kernel</b></p>
+
+
+
+<p>The Linux kernel on which a container runs can be hosted on a virtual machine or on bare metal. The&nbsp;component that does the work of creating and isolating a container process is called the container runtime.&nbsp;Examples of a container runtime are&nbsp;<a style="background-color: #ffffff; font-size: 1rem;" href="https://containerd.io/" target="_blank" rel="noopener">containerD</a>,&nbsp;<a style="background-color: #ffffff; font-size: 1rem;" href="https://www.docker.com/blog/runc/" target="_blank" rel="noopener">runC&nbsp;</a>and&nbsp;<a style="background-color: #ffffff; font-size: 1rem;" href="https://www.redhat.com/en/topics/containers/what-is-rkt" target="_blank" rel="noopener">rkt</a>. The role of a container manager such as&nbsp;Docker is to present a way for humans or machines to work with the container runtime.&nbsp;Let’s take a look at the work the container runtime does in order to create a container</p>
+
+
+
+<h2 class="wp-block-heading">Creating a container</h2>
+
+
+
+<p>As mentioned above, the role of the container runtime is to create and manage the lifecycle of a container. When a container manager such as Docker contacts the container runtime – containerD, for example – to create a container. Then the container runtime will do four things.</p>
+
+
+
+<p>First the container runtime&nbsp; will create the container’s Linux process.</p>
+
+
+
+<p>Second, it will dedicate the Linux process to a custom&nbsp;<a href="https://en.wikipedia.org/wiki/Linux_namespaces" target="_blank" rel="noopener">Linux namespace</a>. According to the Linux manual, a namespace wraps a global system resource in an abstraction that makes it appear to the processes within the namespace that they have their own isolated instance of the global resource. Dedicating a process to a namespace creates the essential isolation that a container requires.</p>
+
+
+
+<p>After the container runtime creates the namespace it then assigns&nbsp;<a href="https://en.wikipedia.org/wiki/Cgroups" target="_blank" rel="noopener">cgroups&nbsp;</a>(control groups) to the process. A cgroup defines how a particular process can use system resources. For example you can use cgroups to limit how much memory or CPU a process can use as well as assign network and disk access priority.</p>
+
+
+
+<p>Finally, the container runtime creates an&nbsp;<a href="https://www.kernel.org/doc/html/latest/filesystems/overlayfs.html" target="_blank" rel="noopener">overlay filesystem</a>&nbsp;for the container. The overlay filesystem creates a special layer on the host filesystem that makes it seem as if the container has its own files, even at the OS level. (See Figure 2, below)</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter"><img decoding="async" src="https://stg-2x.mimik.com/wp-content/uploads/2022/10/img2.png" alt=""/></figure></div>
+
+
+<p><b>Figure 2: The container creation process executed by the container runtime</b></p>
+
+
+
+<p>In short, as shown in Figure 3 below, give a Linux process a namespace, assign it to cgroups and an overlay filesystem and you end up with a Linux container. (See Figure 3 below.)</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter"><img decoding="async" src="https://stg-2x.mimik.com/wp-content/uploads/2022/10/img3.png" alt=""/></figure></div>
+
+
+<p><b>Figure 3: Linux containers combine Linux kernel features around a Linux process</b></p>
+
+
+
+<p>Now, while the container creation process seems pretty straightforward at the conceptual level, when it comes to actually making containers, it’s a lot of hard work on the part of the container runtime that gets executed in milliseconds.</p>
+
+
+
+<p>As current events have revealed, Linux containers have caught on like wildfire. Also, today they’re the cornerstone of the container orchestration technology Kubernetes, which, by the way, has also caught on line wildfire.</p>
+
+
+
+<p>But as powerful as containers and their descendant Kubernetes pods are, they are not a one-size-fits-all solution, particularly when it comes to distributed IoT architectures that use mobile phones and tablets.</p>
+
+
+
+<p>The challenges to get containers running on a cell phone are anything but trivial. There are some significant hurdles to overcome</p>
+
+
+
+<h2 class="wp-block-heading">The hurdles to overcome</h2>
+
+
+
+<p>The first hurdle that needs to be overcome to get a container up and running on a cell phone is that you need to be able to install a container manager and container runtime on the device. Taking the simplest approach, this means that you have to SSH into the phone and download the release files for the container manager and runtime , which are probably in a compressed format. Then you have to install them.</p>
+
+
+
+<p>This might be a simple enough task if you had a terminal prompt to work with. But, out of the box on a cell phone, you don’t. So you have to install a terminal app from an app store.</p>
+
+
+
+<p>Then, once you get the terminal up and running there’s no guarantee that your phone will have all the utilities that you need. There’s no wget or curl. There’s probably no zip or tar utilities installed to extract the container manager and container runtime from the downloads.</p>
+
+
+
+<p>You’ll have to do a lot of work just to get the files. And, once you have the container manager and container runtime on the cell phone, there’s no guarantee they’ll work. Remember, containers rely upon a lot of low-level features in the Linux kernel. They might be there; they might not.</p>
+
+
+
+<p>Now, let’s say by some miracle you do get a container to load in your cell phone. You still have a long way to go to actually turn it into a worker node that can be part of a Kubernetes cluster. That’s another bucket of work that’s just as detailed and fraught with potential errors. Kubernetes has more moving parts than containers. If any one of those parts fails to work as expected, you’re in for some hurt.</p>
+
+
+
+<p>In short, get containers and Kubneretes to run on a cell phone is a crapshoot; a time consuming, labor intensive crap shoot with little, if any guarantee of success</p>
+
+
+
+<h2 class="wp-block-heading">Addressing the issue</h2>
+
+
+
+<p>So, then what’s to be done?</p>
+
+
+
+<p>In terms of getting Linux containers to run on a cell phone or mobile tablet, the question to ask is: why?</p>
+
+
+
+<p>Containers in general and Kuberenetes in particular have their origins in the datacenter. Containers came about as a way to increase the efficiency of process isolation beyond the capabilities of virtual machines. Containers load very fast, on the order of milliseconds. Loading a VM can take minutes.</p>
+
+
+
+<p>Also, the ecosystem for distributing a container is built around the Container Image Repository of which DockerHub is the most familiar. The container image is the template that describes the parts necessary to create a container at runtime. If the container image exists on the local machine the container manager will use the local copy. If not, the container manager is smart enough to figure out how to get the required container image from a repository on the internet.</p>
+
+
+
+<p>Cell phones and mobile tablets on the other hand use the app store model. When you want to add an app to your cell phone you go to the Apple App Store or Google Play and intentionally download the app. It’s not a process that lends easily to the type of automation that’s used in a data center. The app store pattern is essentially focused on human instigation</p>
+
+
+
+<p>On the other hand, the app store pattern is a lot easier to use than the container image repository pattern. The app store pattern is a click and download process. This is its virtue. It’s a hard process that’s hard to break. Container automation is a lot more fragile.</p>
+
+
+
+<p>The long and short of it is that if you’re looking to make mobile devices such as cell phones or tablets part of distributed architecture, make sure they’re being used in a way that makes sense. For example, there’s a good case to be made that a cell phone can be a valuable contributor to a larger distributed system by providing locale based face recognition capability. But, to expect that cell phone to provide that capability as part of a Kubernetes cluster doesn’t really make sense when you consider the time and labor required to make it happen.</p>
+
+
+
+<p>An alternative approach is to devise a distributed architecture that’s compatible with the mobile computing ecosystem, particularly around distributing applications and components.</p>
+
+
+
+<p>As they say, when in Rome, do as the Romans do. The analogy rings true when thinking about creating distributed architectures that use mobile devices. Or, if you have the time, tolerance and expertise, you can devote a weekend of your life and try to get a Linux container to run on a cell phone. If you’ve had both pleasure and success making it all happen, by all means, please let me know. This is a case where I’d love to be proven wrong.</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://stg-2x.mimik.com/wp-content/uploads/2022/07/lamp.png" alt=""/></figure>
+
+
+
+<h2 class="wp-block-heading">Did you know:</h2>
+
+
+
+<p>Did you know that In environments that cannot run container daemons (e.g., smartphones), mimik’s edgeEngine provide additional “light” container capabilities with the ability to download, deploy, and operate microservices ?</p>
+
+
+
+<p><a role="button" href="https://devdocs.mimik.com/key-concepts/01-index"><br>Learn about Fundamentals of mimik edgeEgine Runtime<br></a></p><p>The post <a href="https://mimik.com/understanding-the-limitations-of-using-kubernetes-at-the-edge/">Understanding the limitations of using Kubernetes at the edge</a> first appeared on <a href="https://mimik.com">mimik Technology Inc</a>.</p>]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Taking a Device-Centric Approach to Edge Computing</title>
+		<link>https://mimik.com/taking-a-device-centric-approach-to-edge-computing/</link>
+		
+		<dc:creator><![CDATA[Bob Reselman]]></dc:creator>
+		<pubDate>Thu, 21 Jul 2022 00:58:14 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Bob Reselman]]></category>
+		<guid isPermaLink="false">https://stg-2x.mimik.com/?p=75343</guid>
+
+					<description><![CDATA[<p>I am going to share a little secret with you. mimik’s idea to create a technology that centers around putting distinct, shareable microservices in edge devices such as telephones, mobile tablets, and industry-specific equipment just didn’t make sense to me at first</p>
+<p>The post <a href="https://mimik.com/taking-a-device-centric-approach-to-edge-computing/">Taking a Device-Centric Approach to Edge Computing</a> first appeared on <a href="https://mimik.com">mimik Technology Inc</a>.</p>]]></description>
+										<content:encoded><![CDATA[<p>I am going to share a little secret with you. mimik’s idea to create a technology that centers around putting distinct, shareable microservices in edge devices such as telephones, mobile tablets, and industry-specific equipment just didn’t make sense to me at first. To my thinking, the benefit of edge computing, as with any rich&nbsp;<a href="https://en.wikipedia.org/wiki/Rich_client" target="_blank" rel="noopener">client</a>, is that it relegates a portion of computational activity to the device capturing the data and then forwards the results of that computation onto back-end data centers for archiving and subsequent processing. It’s an architectural style that’s been around since the first PC was connected to a back-end database. Putting more computing on the edge devices reduced the processing burden on the back end.</p>
+
+
+
+<p>It turns out that the reason that I wasn’t “getting it” about mimik’s approach was because I was conceptualizing edge devices as just another data-gathering mechanism for centralized client-server applications.</p>
+
+
+
+<p>Now don’t get me wrong, the client-server approach to edge computing isn’t incorrect. In fact, there are lots of examples of using edge devices for client-server data gathering: the red-light traffic camera down the street from me is a prime example. But it is limiting. There are other ways to think about edge computing, and mimik’s approach has forced me to think differently.</p>
+
+
+
+<p>I struggled with mimik’s approach until I made a fundamental shift in my thinking, which is this: the key to understanding mimik’s approach to edge computing is to put the edge device at the center of it all, both in terms of processing activity and data boundary.</p>
+
+
+
+<p>Allow me to elaborate.</p>
+
+
+
+<h2 class="wp-block-heading">Understanding device-centricity</h2>
+
+
+
+<p>When you think about it, edge computing is nothing new. As I stated above, rich client technology has been around for a while. And there’s an argument to be made that edge technology has been around since the introduction of the telephone.</p>
+
+
+
+<p>Originally telephones were independent yet interconnected nodes on a network. You needed the telephone company to establish the connection between the callers, but once the callers were connected, each device was independent and the information context of each device was private.</p>
+
+
+
+<p>In other words, I could use my telephone to call any other telephone of my choosing. Outside of the dependency on the telephone company to make the connection, my device was independent.</p>
+
+
+
+<p>In terms of information context privacy, consider this: When I made a call to an older-style telephone on a landline, I had no access whatsoever to the information context of the party I was calling. I had no idea where the phone was in terms of physical location. That location was private to the caller. I had no idea if the phone was in an office, a house, or an apartment. All I knew was the number assigned to the phone I was calling.</p>
+
+
+
+<p>Also, callers could not share anything but verbal information with me. They couldn’t send me a picture of their cat. They couldn’t send me their favorite recipe for apple pie. However, they could tell me the recipe over the phone, and then I’d have to write it down on my end.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter"><img decoding="async" src="https://stg-2x.mimik.com/wp-content/uploads/2022/07/information-exchange.png" alt=""/></figure></div>
+
+
+<p><b>Information exchange between telephones was voice-only and direct<br></b></p>
+
+
+
+<p>Until the fax machine came along, no paper was exchanged. The piece of paper that had the pie recipe at one end of the conversation was private to that context and the piece of paper that had the pie recipe on my end was private to me. The person telling me the recipe might have a typed copy. I might have written the recipe down in an impromptu manner with a pencil. There was no way of knowing because paper and the information on each piece of paper were private to the information context.</p>
+
+
+
+<p>These might seem like trivial distinctions, but they’re not. The reason that a telephone can be independent and the information context of a caller is private is because the system is device-centric. To put it another way, the telephone, not the telephone company, is at the center of interactivity. This is a distinctly different approach to the client-server paradigm which puts the server at the center of all interactions in the system. The implications are significant.</p>
+
+
+
+<h2 class="wp-block-heading">Thinking differently about device-centric microservices</h2>
+
+
+
+<p>mimik’s approach to microservice architecture is essentially device-centric. Users download an application that contains a microservice from a central repository onto their edge device. That device might be a cell phone or mobile tablet. It might be a set-top device connected to a television. It could even be a forklift running in a warehouse.</p>
+
+
+
+<p>Once the microservice is downloaded, it’s installed on the device. When working with cell phones and mobile tablets, the download and installation process can be done using an application service such as Apple’s App Store or Google’s Play. Alternatively, download and deployment can be facilitated programmatically by getting the microservice directly from an artifact repository service such as GitHub or Maven Repository.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter"><img decoding="async" src="https://stg-2x.mimik.com/wp-content/uploads/2022/07/microservices.png" alt=""/></figure></div>
+
+
+<p><b>Putting a microservice directly on an edge device makes the microservice independent and private&nbsp;</b></p>
+
+
+
+<p>Regardless of the download and installation method, the important thing to understand is that once the microservice is installed on an edge device, it’s an independent entity and private to the device on which it is installed. This is fundamentally different from server-side distributed application scenarios in which the microservice is a discrete yet integrated part of the larger application. In the mimik paradigm, the microservice is meant to be a stand-alone asset.</p>
+
+
+
+<p>The stand-alone nature of a microservice that runs with mimik requires those who create and use microservices to think differently. The best way to conceptualize this difference is to go back to the telephone analogy.</p>
+
+
+
+<h2 class="wp-block-heading">The emergence of device-centric microservices</h2>
+
+
+
+<p>As mentioned previously, up until the introduction of fax machines, land-line telephones were voice-only devices. Two callers connected and had a verbal conversation. That was the limit of data exchange. When cell phones first appeared, they too were voice-only.</p>
+
+
+
+<p>Eventually, cell phone callers could exchange text messages via SMS. Early versions of SMS sent the text directly from caller to recipient. There was no server-side storage. After SMS came exchanging photos and pictures. There was no sending hyperlinks between parties. You sent the binary photographic data directly to the recipient. This is because early cell phones didn’t have direct access to the internet and didn&#8217;t have the computing power to support browsers.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter"><img decoding="async" src="https://stg-2x.mimik.com/wp-content/uploads/2022/07/data.png" alt=""/></figure></div>
+
+
+<p><b>Data exchange in early cell phone technology was based on peer-to-peer networking</b></p>
+
+
+
+<p>Putting history aside, the important thing to understand about the early data exchange paradigm is that all data on the cell phone was private to the device. If I took a photo of a cat using my cell phone’s camera, that photo lived on my cell phone, not on some central server on the back end. Thus, I had a great deal of privacy. The ability to store cat photos in a central location was a technology that was yet to come.</p>
+
+
+
+<p>But that technology did come. Cell phones also became a lot more powerful: so much so that today, a typical cell phone has more computing power than all the computers required to land a man on the moon in 1969. The amazing amount of computing power available in modern cell phones makes them well suited to being first-class, client-side devices in the ever-expanding universe of client-server architectures. It’s no surprise that cell phones are a predominant client device for applications such as Facebook, Twitter, and Instagram.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter"><img decoding="async" src="https://stg-2x.mimik.com/wp-content/uploads/2022/07/sharing-data.png" alt=""/></figure></div>
+
+
+<p><b>Sharing data from a common location on the network is typical of a client-server approach to distributed computing.</b></p>
+
+
+
+<p>In order to handle all this client activity on the front end, things had to change on the back end to handle the enormous load, both in terms of computing capacity and the increased frequency in application release cycles. Thus, the emergence of microservice oriented applications (MOA) on the back end.</p>
+
+
+
+<p>The result is that today we have two patterns unfolding on the technology landscape. The first pattern is the emergence of billions of powerful cell phones and other types of edge devices bound to centralized applications hosted in the cloud. The second pattern is the emergence of microservice oriented applications on the back end to handle the increasing burden placed on the ever-growing centralization.</p>
+
+
+
+<p>But there is a third pattern emerging: independent edge devices running their own microservices. This is where mimik’s approach of device-centric microservices comes into play.</p>
+
+
+
+<h2 class="wp-block-heading">Creating device-centric microservices</h2>
+
+
+
+<p>Installing microservices as independent assets on a mobile device is not about turning that device into another node in a centralized microservice-oriented architecture. Instead, it’s about taking an entirely new approach to distributed architecture. It’s about putting the edge device at the forefront of computing activity. It’s also about creating device-centric microservices. To understand the concept, let’s go back to cat photos on a cell phone.</p>
+
+
+
+<p>Imagine I have a cell phone full of cat photos. A friend of mine loves cat photos and has a cell phone. (I know, in this day and age, everyone has a cell phone. What’s to imagine?) Obviously, I want my friend to enjoy my latest cat photos.</p>
+
+
+
+<p>Now, I could easily send my friend my most recent cat photos as an SMS attachment whenever I take new photos. That’s what I would have done decades ago. The drawback is that there’s a lot of communication overhead involved. I’d have to remember to SMS my friend a new photo when I took one. Or, my friend would need to keep contacting me to ask if any new cat photos were available. As you can see, it’s a pretty inefficient way to get the latest cat photos to my friend.</p>
+
+
+
+<p>Most likely today, I’d post my most recent cat photos out on a social media site where my friend is a member. The site notifies my friend that I posted a new cat photo. My friend can simply download the photos from the site. This happens all the time. However, there’s a drawback: I’ve sacrificed my privacy by turning the photo over to the social media site.</p>
+
+
+
+<p>However, taking the device-centric approach to microservices allows me to maintain my privacy. Imagine that I send my friend a hyperlink that’s bound to a microservice running on my cell phone, and only on my cell phone. This microservice allows my friend to get my most recent cat photos that are stored on my cell phone. The microservice notifies my friend that a new cat photo is available. It also provides a private link to get the recent photo.</p>
+
+
+
+<p>Publishing such a microservice would allow my friend to get cat photos on demand while not forcing me to sacrifice my privacy. The only interactions in the photo exchange are between my cell phone and my friend’s cell phone.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter"><img decoding="async" src="https://stg-2x.mimik.com/wp-content/uploads/2022/07/device.png" alt=""/></figure></div>
+
+
+<p><b>Device-centric microservices are independent and private to the hosting device</b></p>
+
+
+
+<p>This is what device-centric microservices are about. It’s the ability to publish services that are accessible only to qualified parties in a manner that is private and independent. Of course, I still need a network provider to connect my friend’s cell phone to mine, just as in the olden days when two landline telephones needed the telephone company to connect callers together. But that’s where it ends. My data is on my device only and not shared as an asset at a common location on the network. It’s an important distinction and one that will require developers to rethink how they approach application design in general and microservices in particular.</p>
+
+
+
+<h2 class="wp-block-heading">Putting the edge device in the center</h2>
+
+
+
+<p>So, how does one conceptualize a device-centric microservice? One of the easier use cases to imagine involves access to private data, such as sharing private medical data. Instead of granting permission for a third party to access my medical data from my health provider, I download a microservice that allows the third party to contact me directly for the information. In turn, the microservice gets the data from my health provider using my credentials. Then, the microservice sends the information on to the third party from my device.</p>
+
+
+
+<p>While the use case above is simple, it&#8217;s emblematic of two ways I had to change my thinking in terms of device-centric microservices. The first change I made was that I had to realize that there are viable architectural patterns out there besides traditional client-server designs. Admittedly, I had become myopic in my technical thinking. My usual mindset is to imagine a multitude of clients bound to back-end applications in the cloud developed according to the principles of MOA architecture design. I was like the carpenter whose only tool was a hammer. My only solution to a problem was to bang nails, real or imagined.</p>
+
+
+
+<p>The second change I needed to make was that once I accepted the viability of device-centric microservices, I had to imagine microservices that were indeed independent and device-centric. Again, my bias is to think of microservices as discrete parts that get aggregated together to create a larger server-side application. Device-centric microservices live outside the data center. As a result, they are not a discrete part of a larger application any more than the camera in my cell phone is a part of a larger piece of photographic machinery. The cell phone camera provides a specific service that is special to my needs. It’s the same with device-centric microservices. They stand alone and provide a service that is special to the needs of the user of the device.</p>
+
+
+
+<p>It’s a different way of thinking.</p>
+
+
+
+<h2 class="wp-block-heading">Putting it all together</h2>
+
+
+
+<p>There’s a good argument to be made that edge computing is on its way to being the next Big Thing in IT.&nbsp; According to a report from Grand View Research, the global edge computing market is forecast to expand at a compound annual growth rate (CAGR) of 38.4 percent from 2021 to 2028. That rate of growth means that within seven years, the edge computing market will be nearly ten times the size it is today. This is significant growth.</p>
+
+
+
+<p>Edge devices will undoubtedly enhance traditional client-server applications. Transforming the household refrigerator into a rich client that can automatically order milk online when stock runs low is a pretty amazing technical feat.</p>
+
+
+
+<p>Yet, for all the opportunity edge computing offers, there’s also a good argument to be made that if we’re not careful, it could become the latest flavor of the month on the IT landscape if we’re not careful. As I discovered, thinking of edge computing only in terms of traditional client-server architectures limits the potential of the technology.</p>
+
+
+
+<p>Having one edge device engage in communication with another edge device directly and independently is nothing new. Telephones have been doing it for well over a century. But allowing an edge device to publish a microservice that can be used by other edge devices directly and independently is new. For me, it was a transformational way to understand microservices, which offered me new ways to think about systems design. It took me a while to get there, but I did.</p>
+
+
+
+<p>I’ve come to make device-centric systems part of the way I think about enterprise architecture. Taking a device-centric approach to system design will not replace traditional client-server architectures—and it’s not meant to. Rather, the device-centric approach provides a way to create solutions for mobile computing systems in which independence and privacy are paramount concerns.</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://stg-2x.mimik.com/wp-content/uploads/2022/07/lamp.png" alt=""/></figure>
+
+
+
+<h2 class="wp-block-heading">Did you know:</h2>
+
+
+
+<p>mimik&#8217;s hybrid edgeCloud platform comes with a run-time engine (edgeEngine) that enables developers to work with global functions in the central cloud while utilizing edge microservices for moving processing workloads to different edge devices such as smartphones or TVs.<br><a role="button" href="https://devdocs.mimik.com/key-concepts/01-index"><br>Learn about Fundamentals of mimik edgeEgine Runtime<br></a></p><p>The post <a href="https://mimik.com/taking-a-device-centric-approach-to-edge-computing/">Taking a Device-Centric Approach to Edge Computing</a> first appeared on <a href="https://mimik.com">mimik Technology Inc</a>.</p>]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

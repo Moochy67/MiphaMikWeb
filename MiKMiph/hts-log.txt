@@ -1,0 +1,909 @@
+HTTrack3.49-2 launched on Mon, 27 May 2024 12:26:10 at https://mimik.com +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/*
+(webhttrack -q -%i -w https://mimik.com -%L https://www.mimik.com -O "/Users/seyedsharif/Destop/ XXMikMipha/MiKMiph" -n -%P -N0 -s2 -p7 -D -a -K0 -c4 -%k -A25000 -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -%s -%u )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+12:26:10	Error: 	Could not include URL list: https://www.mimik.com
+12:26:16	Warning: 	file not stored in cache due to bogus state (incomplete type with OK (200), size 18821): https://mimik.com/wp-content/plugins/wp-job-openings/assets/css/style.min.css?ver=3.4.6
+12:27:17	Warning: 	Moved Permanently for unpkg.com/robots.txt
+12:27:17	Warning: 	Redirected link is identical because of 'URL Hack' option: unpkg.com/robots.txt and https://unpkg.com/robots.txt
+12:27:17	Warning: 	Warning moved treated for unpkg.com/robots.txt (real one is https://unpkg.com/robots.txt)
+12:27:17	Warning: 	Moved Permanently for unpkg.com/
+12:27:17	Warning: 	Redirected link is identical because of 'URL Hack' option: unpkg.com/ and https://unpkg.com/
+12:27:17	Warning: 	File has moved from unpkg.com/ to https://unpkg.com/
+12:27:18	Warning: 	Moved Permanently for static.addtoany.com/robots.txt
+12:27:18	Warning: 	Redirected link is identical because of 'URL Hack' option: static.addtoany.com/robots.txt and https://static.addtoany.com/robots.txt
+12:27:18	Warning: 	Warning moved treated for static.addtoany.com/robots.txt (real one is https://static.addtoany.com/robots.txt)
+12:27:18	Warning: 	Moved Permanently for static.addtoany.com/
+12:27:18	Warning: 	Redirected link is identical because of 'URL Hack' option: static.addtoany.com/ and https://static.addtoany.com/
+12:27:18	Warning: 	File has moved from static.addtoany.com/ to https://static.addtoany.com/
+12:27:20	Error: 	"Not Found" (404) at link fonts.googleapis.com/ (from https://mimik.com/)
+12:27:21	Error: 	"Not Found" (404) at link https://fonts.gstatic.com/ (from https://mimik.com/)
+12:27:22	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/pages/9 (from https://mimik.com/)
+12:27:41	Error: 	"Not Found" (404) at link https://mimik.com/?page_id=439 (from https://mimik.com/)
+12:27:41	Error: 	"Not Found" (404) at link https://mimik.com/?page_id=382 (from https://mimik.com/)
+12:27:41	Error: 	"Not Found" (404) at link https://mimik.com/?page_id=428 (from https://mimik.com/)
+12:27:41	Error: 	"Not Found" (404) at link https://mimik.com/?page_id=411 (from https://mimik.com/)
+12:27:41	Error: 	"Not Found" (404) at link https://mimik.com/?page_id=446 (from https://mimik.com/)
+12:28:17	Error: 	"Not Found" (404) at link https://mimik.com/mimik-microservices/ (from https://mimik.com/)
+12:28:53	Error: 	"Not Found" (404) at link https://mimik.com/?page_id=455 (from https://mimik.com/)
+12:29:06	Error: 	"Not Found" (404) at link https://mimik.com/%22https:/mimik.com/wp-content/uploads/2023/09/what-is-edge-engine-2.json (from https://mimik.com/)
+12:29:06	Error: 	"Not Found" (404) at link https://mimik.com/transparent (from https://mimik.com/)
+12:29:27	Warning: 	Moved Permanently for https://mimik.com/mimik.com/mimiks-platform-adopted-by-marelli/
+12:29:27	Warning: 	File has moved from https://mimik.com/mimik.com/mimiks-platform-adopted-by-marelli/ to https://mimik.com/mimiks-platform-adopted-by-marelli/
+12:29:39	Warning: 	Found for https://px.ads.linkedin.com/collect/?pid=3111250&fmt=gif
+12:29:39	Warning: 	File has moved from https://px.ads.linkedin.com/collect/?pid=3111250&fmt=gif to /collect/?pid=3111250&fmt=gif&cookiesTest=true
+12:29:39	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/pages/11 (from https://mimik.com/products/)
+12:29:39	Warning: 	Moved Permanently for https://mimik.com/?p=11
+12:29:39	Warning: 	File has moved from https://mimik.com/?p=11 to https://mimik.com/products/
+12:29:39	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/pages/146 (from https://mimik.com/sectors/automotive/)
+12:29:39	Warning: 	Moved Permanently for https://mimik.com/?p=146
+12:29:39	Warning: 	File has moved from https://mimik.com/?p=146 to https://mimik.com/sectors/automotive/
+12:29:39	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/pages/4403 (from https://mimik.com/sectors/industrial-automation/)
+12:29:39	Warning: 	Moved Permanently for https://mimik.com/?p=4403
+12:29:39	Warning: 	File has moved from https://mimik.com/?p=4403 to https://mimik.com/sectors/industrial-automation/
+12:29:39	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/pages/81950 (from https://mimik.com/sectors/edgeai/)
+12:29:39	Warning: 	Moved Permanently for https://mimik.com/?p=81950
+12:29:39	Warning: 	File has moved from https://mimik.com/?p=81950 to https://mimik.com/sectors/edgeai/
+12:29:39	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/pages/1248 (from https://mimik.com/resources/)
+12:29:39	Warning: 	Moved Permanently for https://mimik.com/?p=1248
+12:29:39	Warning: 	File has moved from https://mimik.com/?p=1248 to https://mimik.com/resources/
+12:29:51	Error: 	"Not Found" (404) at link https://mimik.com/category/technical-blog (from https://mimik.com/resources/)
+12:29:51	Error: 	"Not Found" (404) at link https://mimik.com/case-studies/ (from https://mimik.com/resources/)
+12:30:13	Warning: 	Link https://mimik.com/category/blog/page/2/ not scanned (follow robots meta tag)
+12:30:13	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/categories/61 (from https://mimik.com/category/blog/)
+12:31:02	Warning: 	Link https://mimik.com/category/blog/page/3/ not scanned (follow robots meta tag)
+12:31:02	Warning: 	Link https://mimik.com/category/blog/page/10/ not scanned (follow robots meta tag)
+12:31:02	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/categories/56 (from https://mimik.com/category/whitepapers/)
+12:31:26	Warning: 	Link https://mimik.com/category/news/page/2/ not scanned (follow robots meta tag)
+12:31:26	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/categories/52 (from https://mimik.com/category/news/)
+12:31:56	Warning: 	Link https://mimik.com/category/news/page/3/ not scanned (follow robots meta tag)
+12:31:56	Warning: 	Link https://mimik.com/category/news/page/5/ not scanned (follow robots meta tag)
+12:31:56	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/pages/80962 (from https://mimik.com/our-events/)
+12:31:56	Warning: 	Moved Permanently for https://mimik.com/?p=80962
+12:31:56	Warning: 	File has moved from https://mimik.com/?p=80962 to https://mimik.com/our-events/
+12:33:12	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/pages/17 (from https://mimik.com/about-mimik/)
+12:33:12	Warning: 	Moved Permanently for https://mimik.com/?p=17
+12:33:12	Warning: 	File has moved from https://mimik.com/?p=17 to https://mimik.com/about-mimik/
+12:33:12	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/pages/239 (from https://mimik.com/meet-the-team/)
+12:33:12	Warning: 	Moved Permanently for https://mimik.com/?p=239
+12:33:12	Warning: 	File has moved from https://mimik.com/?p=239 to https://mimik.com/meet-the-team/
+12:33:30	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/pages/1651 (from https://mimik.com/awards/)
+12:33:30	Warning: 	Moved Permanently for https://mimik.com/?p=1651
+12:33:30	Warning: 	File has moved from https://mimik.com/?p=1651 to https://mimik.com/awards/
+12:33:30	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/pages/1322 (from https://mimik.com/clients/)
+12:33:30	Warning: 	Moved Permanently for https://mimik.com/?p=1322
+12:33:30	Warning: 	File has moved from https://mimik.com/?p=1322 to https://mimik.com/clients/
+12:33:30	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/pages/254 (from https://mimik.com/job-openings/)
+12:33:30	Warning: 	Moved Permanently for https://mimik.com/?p=254
+12:33:30	Warning: 	File has moved from https://mimik.com/?p=254 to https://mimik.com/job-openings/
+12:34:01	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/pages/359 (from https://mimik.com/contact-us/)
+12:34:01	Warning: 	Moved Permanently for https://mimik.com/?p=359
+12:34:01	Warning: 	File has moved from https://mimik.com/?p=359 to https://mimik.com/contact-us/
+12:34:01	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/pages/1379 (from https://mimik.com/request-a-demo/)
+12:34:01	Warning: 	Moved Permanently for https://mimik.com/?p=1379
+12:34:01	Warning: 	File has moved from https://mimik.com/?p=1379 to https://mimik.com/request-a-demo/
+12:34:01	Error: 	"Not Found" (404) at link https://mimik.com/?p=1134 (from https://mimik.com/request-a-demo/)
+12:34:01	Error: 	"Not Found" (404) at link https://mimik.com/?p=1133 (from https://mimik.com/request-a-demo/)
+12:34:01	Error: 	"Not Found" (404) at link https://mimik.com/?p=1129 (from https://mimik.com/request-a-demo/)
+12:34:01	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/pages/3194 (from https://mimik.com/hec/)
+12:34:01	Warning: 	Moved Permanently for https://mimik.com/?p=3194
+12:34:01	Warning: 	File has moved from https://mimik.com/?p=3194 to https://mimik.com/hec/
+12:34:01	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/82482 (from https://mimik.com/building-blocks-to-empower-cognitive-internet-with-hybrid-edgecloud/)
+12:34:01	Warning: 	Moved Permanently for https://mimik.com/?p=82482
+12:34:01	Warning: 	File has moved from https://mimik.com/?p=82482 to https://mimik.com/building-blocks-to-empower-cognitive-internet-with-hybrid-edgecloud/
+12:34:02	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/82485 (from https://mimik.com/bridging-worlds-hybrid-edge-cloud-and-distributed-ledger-reshaping-digital-services-knowledge-exchange/)
+12:34:02	Warning: 	Moved Permanently for https://mimik.com/?p=82485
+12:34:02	Warning: 	File has moved from https://mimik.com/?p=82485 to https://mimik.com/bridging-worlds-hybrid-edge-cloud-and-distributed-ledger-reshaping-digital-services-knowledge-exchange/
+12:34:16	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/82088 (from https://mimik.com/mimik-collaborates-with-marelli-ces-2024/)
+12:34:16	Warning: 	Moved Permanently for https://mimik.com/?p=82088
+12:34:16	Warning: 	File has moved from https://mimik.com/?p=82088 to https://mimik.com/mimik-collaborates-with-marelli-ces-2024/
+12:34:28	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/79390 (from https://mimik.com/mimik-technology-and-blackberry-collaborate-to-accelerate-software-defined-vehicles/)
+12:34:28	Warning: 	Moved Permanently for https://mimik.com/?p=79390
+12:34:28	Warning: 	File has moved from https://mimik.com/?p=79390 to https://mimik.com/mimik-technology-and-blackberry-collaborate-to-accelerate-software-defined-vehicles/
+12:34:28	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/61036 (from https://mimik.com/cathie-wood-joins-mimik-technologys-board-of-directors/)
+12:34:28	Warning: 	Moved Permanently for https://mimik.com/?p=61036
+12:34:28	Warning: 	File has moved from https://mimik.com/?p=61036 to https://mimik.com/cathie-wood-joins-mimik-technologys-board-of-directors/
+12:34:28	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/74049 (from https://mimik.com/mimik-and-business-decision-partner-to-accelerate-adoption-of-industry-4-0-technologies/)
+12:34:28	Warning: 	Moved Permanently for https://mimik.com/?p=74049
+12:34:28	Warning: 	File has moved from https://mimik.com/?p=74049 to https://mimik.com/mimik-and-business-decision-partner-to-accelerate-adoption-of-industry-4-0-technologies/
+12:34:28	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/79530 (from https://mimik.com/tttechauto-and-mimik-partnership-to-accelerate-software-defined-vehicles-and-smart-mobility/)
+12:34:28	Warning: 	Moved Permanently for https://mimik.com/?p=79530
+12:34:28	Warning: 	File has moved from https://mimik.com/?p=79530 to https://mimik.com/tttechauto-and-mimik-partnership-to-accelerate-software-defined-vehicles-and-smart-mobility/
+12:34:28	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/pages/80907 (from https://mimik.com/privacy-policy-2/)
+12:34:28	Warning: 	Moved Permanently for https://mimik.com/?p=80907
+12:34:28	Warning: 	File has moved from https://mimik.com/?p=80907 to https://mimik.com/privacy-policy-2/
+12:34:28	Error: 	"Not Found" (404) at link https://mimik.com/mimikcontact (from https://mimik.com/privacy-policy-2/)
+12:34:28	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/pages/80911 (from https://mimik.com/terms-of-service/)
+12:34:28	Warning: 	Moved Permanently for https://mimik.com/?p=80911
+12:34:28	Warning: 	File has moved from https://mimik.com/?p=80911 to https://mimik.com/terms-of-service/
+12:34:28	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/pages/1194 (from https://mimik.com/blog/)
+12:34:28	Warning: 	Moved Permanently for https://mimik.com/?p=1194
+12:34:28	Warning: 	File has moved from https://mimik.com/?p=1194 to https://mimik.com/blog/
+12:34:40	Warning: 	Link https://mimik.com/blog/page/2/ not scanned (follow robots meta tag)
+12:34:40	Warning: 	Link https://mimik.com/blog/page/3/ not scanned (follow robots meta tag)
+12:34:40	Warning: 	Link https://mimik.com/blog/page/8/ not scanned (follow robots meta tag)
+12:34:40	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/81939 (from https://mimik.com/the-four-stages-of-edge-ai/)
+12:34:40	Warning: 	Moved Permanently for https://mimik.com/?p=81939
+12:34:40	Warning: 	File has moved from https://mimik.com/?p=81939 to https://mimik.com/the-four-stages-of-edge-ai/
+12:34:45	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/79738 (from https://mimik.com/endpoint-device-security-the-missing-link-in-sase/)
+12:34:46	Warning: 	Moved Permanently for https://mimik.com/?p=79738
+12:34:46	Warning: 	File has moved from https://mimik.com/?p=79738 to https://mimik.com/endpoint-device-security-the-missing-link-in-sase/
+12:34:51	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/76879 (from https://mimik.com/hybrid-edge-cloud-a-pragmatic-approach-for-decentralized-cloud-computing/)
+12:34:51	Warning: 	Moved Permanently for https://mimik.com/?p=76879
+12:34:51	Warning: 	File has moved from https://mimik.com/?p=76879 to https://mimik.com/hybrid-edge-cloud-a-pragmatic-approach-for-decentralized-cloud-computing/
+12:34:51	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/66129 (from https://mimik.com/mec-mimik-one-plus-one-equals-eleven/)
+12:34:51	Warning: 	Moved Permanently for https://mimik.com/?p=66129
+12:34:51	Warning: 	File has moved from https://mimik.com/?p=66129 to https://mimik.com/mec-mimik-one-plus-one-equals-eleven/
+12:34:51	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/81834 (from https://mimik.com/mimik-appoints-simon-edelhaus/)
+12:34:51	Warning: 	Moved Permanently for https://mimik.com/?p=81834
+12:34:51	Warning: 	File has moved from https://mimik.com/?p=81834 to https://mimik.com/mimik-appoints-simon-edelhaus/
+12:34:51	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/79620 (from https://mimik.com/mimiks-platform-adopted-by-marelli/)
+12:34:51	Warning: 	Moved Permanently for https://mimik.com/?p=79620
+12:34:51	Warning: 	File has moved from https://mimik.com/?p=79620 to https://mimik.com/mimiks-platform-adopted-by-marelli/
+12:34:51	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/our-events/81920 (from https://mimik.com/our-events/meet-mimik-team-at-ces-2024/)
+12:34:51	Warning: 	Moved Permanently for https://mimik.com/?p=81920
+12:34:51	Warning: 	File has moved from https://mimik.com/?p=81920 to https://mimik.com/our-events/meet-mimik-team-at-ces-2024/
+12:34:51	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/our-events/80791 (from https://mimik.com/our-events/api-world-2023-meet-mimik-cto-michel-burger-2/)
+12:34:51	Warning: 	Moved Permanently for https://mimik.com/?p=80791
+12:34:51	Warning: 	File has moved from https://mimik.com/?p=80791 to https://mimik.com/our-events/api-world-2023-meet-mimik-cto-michel-burger-2/
+12:34:51	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/our-events/81501 (from https://mimik.com/our-events/virtual-api-world-2023-michel-burger/)
+12:34:51	Warning: 	Moved Permanently for https://mimik.com/?p=81501
+12:34:51	Warning: 	File has moved from https://mimik.com/?p=81501 to https://mimik.com/our-events/virtual-api-world-2023-michel-burger/
+12:34:51	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/79190 (from https://mimik.com/beyond-boundaries/)
+12:34:51	Warning: 	Moved Permanently for https://mimik.com/?p=79190
+12:34:51	Warning: 	File has moved from https://mimik.com/?p=79190 to https://mimik.com/beyond-boundaries/
+12:34:51	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/79436 (from https://mimik.com/mimik-for-digital-twin/)
+12:34:51	Warning: 	Moved Permanently for https://mimik.com/?p=79436
+12:34:51	Warning: 	File has moved from https://mimik.com/?p=79436 to https://mimik.com/mimik-for-digital-twin/
+12:34:51	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/81264 (from https://mimik.com/harnessing-the-power-of-hybrid-edge-cloud-revolutionizing-app-development-with-mimik/)
+12:34:51	Warning: 	Moved Permanently for https://mimik.com/?p=81264
+12:34:51	Warning: 	File has moved from https://mimik.com/?p=81264 to https://mimik.com/harnessing-the-power-of-hybrid-edge-cloud-revolutionizing-app-development-with-mimik/
+12:34:53	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/81259 (from https://mimik.com/the-journey-to-autonomy-unleashing-the-power-within/)
+12:34:54	Warning: 	Moved Permanently for https://mimik.com/?p=81259
+12:34:54	Warning: 	File has moved from https://mimik.com/?p=81259 to https://mimik.com/the-journey-to-autonomy-unleashing-the-power-within/
+12:34:56	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/78891 (from https://mimik.com/a-primer-to-geolocation-detection-on-the-edge/)
+12:34:57	Warning: 	Moved Permanently for https://mimik.com/?p=78891
+12:34:57	Warning: 	File has moved from https://mimik.com/?p=78891 to https://mimik.com/a-primer-to-geolocation-detection-on-the-edge/
+12:34:58	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/77236 (from https://mimik.com/understanding-the-limits-of-replication-and-redundancy-under-edge-architectures/)
+12:34:58	Warning: 	Moved Permanently for https://mimik.com/?p=77236
+12:34:58	Warning: 	File has moved from https://mimik.com/?p=77236 to https://mimik.com/understanding-the-limits-of-replication-and-redundancy-under-edge-architectures/
+12:34:58	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/77038 (from https://mimik.com/understanding-the-limitations-of-using-kubernetes-at-the-edge/)
+12:34:58	Warning: 	Moved Permanently for https://mimik.com/?p=77038
+12:34:58	Warning: 	File has moved from https://mimik.com/?p=77038 to https://mimik.com/understanding-the-limitations-of-using-kubernetes-at-the-edge/
+12:34:58	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/75343 (from https://mimik.com/taking-a-device-centric-approach-to-edge-computing/)
+12:34:58	Warning: 	Moved Permanently for https://mimik.com/?p=75343
+12:34:58	Warning: 	File has moved from https://mimik.com/?p=75343 to https://mimik.com/taking-a-device-centric-approach-to-edge-computing/
+12:34:58	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/73944 (from https://mimik.com/unlocking-the-next-gen-of-apps-for-the-hyper-connected-world/)
+12:34:58	Warning: 	Moved Permanently for https://mimik.com/?p=73944
+12:34:58	Warning: 	File has moved from https://mimik.com/?p=73944 to https://mimik.com/unlocking-the-next-gen-of-apps-for-the-hyper-connected-world/
+12:34:58	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/74395 (from https://mimik.com/how-to-address-safety-and-security-for-software-defined-vehicles/)
+12:34:58	Warning: 	Moved Permanently for https://mimik.com/?p=74395
+12:34:58	Warning: 	File has moved from https://mimik.com/?p=74395 to https://mimik.com/how-to-address-safety-and-security-for-software-defined-vehicles/
+12:34:58	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/74960 (from https://mimik.com/the-autonomous-world-is-horizontal-not-vertical/)
+12:34:58	Warning: 	Moved Permanently for https://mimik.com/?p=74960
+12:34:58	Warning: 	File has moved from https://mimik.com/?p=74960 to https://mimik.com/the-autonomous-world-is-horizontal-not-vertical/
+12:34:58	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/74951 (from https://mimik.com/three-tech-industry-trends-to-watch-2/)
+12:34:58	Warning: 	Moved Permanently for https://mimik.com/?p=74951
+12:34:58	Warning: 	File has moved from https://mimik.com/?p=74951 to https://mimik.com/three-tech-industry-trends-to-watch-2/
+12:34:58	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/74945 (from https://mimik.com/how-to-make-way-for-the-hybrid-edge-cloud-in-your-digital-transformation-2/)
+12:34:58	Warning: 	Moved Permanently for https://mimik.com/?p=74945
+12:34:58	Warning: 	File has moved from https://mimik.com/?p=74945 to https://mimik.com/how-to-make-way-for-the-hybrid-edge-cloud-in-your-digital-transformation-2/
+12:34:58	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/50542 (from https://mimik.com/using-mimik-hybrid-edge-cloud-with-aws-greengrass/)
+12:34:58	Warning: 	Moved Permanently for https://mimik.com/?p=50542
+12:34:58	Warning: 	File has moved from https://mimik.com/?p=50542 to https://mimik.com/using-mimik-hybrid-edge-cloud-with-aws-greengrass/
+12:35:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/45300 (from https://mimik.com/application-of-mimik-decentralized-edge-cloud-plattform-for-manufacturing/)
+12:35:04	Warning: 	Moved Permanently for https://mimik.com/?p=45300
+12:35:04	Warning: 	File has moved from https://mimik.com/?p=45300 to https://mimik.com/application-of-mimik-decentralized-edge-cloud-plattform-for-manufacturing/
+12:35:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/45262 (from https://mimik.com/cloud-decentralization-trustless-revolution/)
+12:35:04	Warning: 	Moved Permanently for https://mimik.com/?p=45262
+12:35:04	Warning: 	File has moved from https://mimik.com/?p=45262 to https://mimik.com/cloud-decentralization-trustless-revolution/
+12:35:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/44687 (from https://mimik.com/as-network-chokes/)
+12:35:04	Warning: 	Moved Permanently for https://mimik.com/?p=44687
+12:35:04	Warning: 	File has moved from https://mimik.com/?p=44687 to https://mimik.com/as-network-chokes/
+12:35:04	Error: 	"Not Found" (404) at link https://mimik.com/edge-cloud-use-cases/ (from https://mimik.com/as-network-chokes/)
+12:35:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/44726 (from https://mimik.com/digital-freedom/)
+12:35:04	Warning: 	Moved Permanently for https://mimik.com/?p=44726
+12:35:04	Warning: 	File has moved from https://mimik.com/?p=44726 to https://mimik.com/digital-freedom/
+12:35:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/77009 (from https://mimik.com/mimik-academy-celebrates-its-3rd-year-anniversary/)
+12:35:04	Warning: 	Moved Permanently for https://mimik.com/?p=77009
+12:35:04	Warning: 	File has moved from https://mimik.com/?p=77009 to https://mimik.com/mimik-academy-celebrates-its-3rd-year-anniversary/
+12:35:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/75284 (from https://mimik.com/tata-elxsi-and-mimik-technology-partner-to-deliver-5g-services-forindustry-4-0-automotive-media-distribution-solutions/)
+12:35:04	Warning: 	Moved Permanently for https://mimik.com/?p=75284
+12:35:04	Warning: 	File has moved from https://mimik.com/?p=75284 to https://mimik.com/tata-elxsi-and-mimik-technology-partner-to-deliver-5g-services-forindustry-4-0-automotive-media-distribution-solutions/
+12:35:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/73742 (from https://mimik.com/mimik-edgeengine-the-essential-bridge-to-the-open-horizon-solution/)
+12:35:04	Warning: 	Moved Permanently for https://mimik.com/?p=73742
+12:35:04	Warning: 	File has moved from https://mimik.com/?p=73742 to https://mimik.com/mimik-edgeengine-the-essential-bridge-to-the-open-horizon-solution/
+12:35:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/73691 (from https://mimik.com/mimik-day/)
+12:35:04	Warning: 	Moved Permanently for https://mimik.com/?p=73691
+12:35:04	Warning: 	File has moved from https://mimik.com/?p=73691 to https://mimik.com/mimik-day/
+12:35:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/73613 (from https://mimik.com/do-the-right-thing-all-the-timean-interview-with-siavash-alamouti/)
+12:35:04	Warning: 	Moved Permanently for https://mimik.com/?p=73613
+12:35:04	Warning: 	File has moved from https://mimik.com/?p=73613 to https://mimik.com/do-the-right-thing-all-the-timean-interview-with-siavash-alamouti/
+12:35:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/73598 (from https://mimik.com/democratizing-internet-access-2022-marconi-prize-awarded-to-wireless-innovator-siavash-alamouti/)
+12:35:04	Warning: 	Moved Permanently for https://mimik.com/?p=73598
+12:35:04	Warning: 	File has moved from https://mimik.com/?p=73598 to https://mimik.com/democratizing-internet-access-2022-marconi-prize-awarded-to-wireless-innovator-siavash-alamouti/
+12:35:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/73475 (from https://mimik.com/mimik-executive-chairman-siavash-alamouti-awarded-prestigious-2022-marconi-prize/)
+12:35:04	Warning: 	Moved Permanently for https://mimik.com/?p=73475
+12:35:04	Warning: 	File has moved from https://mimik.com/?p=73475 to https://mimik.com/mimik-executive-chairman-siavash-alamouti-awarded-prestigious-2022-marconi-prize/
+12:35:04	Warning: 	Moved Permanently for https://mimik.com/team-member/sivash-almouti/
+12:35:04	Warning: 	File has moved from https://mimik.com/team-member/sivash-almouti/ to https://mimik.com/team-member/siavash-alamouti/
+12:35:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/71677 (from https://mimik.com/mimik-technology-joins-lf-edge-community-in-collaboration-with-open-horizon/)
+12:35:04	Warning: 	Moved Permanently for https://mimik.com/?p=71677
+12:35:04	Warning: 	File has moved from https://mimik.com/?p=71677 to https://mimik.com/mimik-technology-joins-lf-edge-community-in-collaboration-with-open-horizon/
+12:35:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/71556 (from https://mimik.com/mimik-technology-and-claysol-media-labs-partner/)
+12:35:04	Warning: 	Moved Permanently for https://mimik.com/?p=71556
+12:35:04	Warning: 	File has moved from https://mimik.com/?p=71556 to https://mimik.com/mimik-technology-and-claysol-media-labs-partner/
+12:35:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/70907 (from https://mimik.com/mimik-technology-closes-14-3-million-extended-series-a-funding-round-led-by-pier-88/)
+12:35:04	Warning: 	Moved Permanently for https://mimik.com/?p=70907
+12:35:04	Warning: 	File has moved from https://mimik.com/?p=70907 to https://mimik.com/mimik-technology-closes-14-3-million-extended-series-a-funding-round-led-by-pier-88/
+12:35:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/our-events/80790 (from https://mimik.com/our-events/fay-at-global-semiconductor-and-electronics-forum-2023/)
+12:35:04	Warning: 	Moved Permanently for https://mimik.com/?p=80790
+12:35:04	Warning: 	File has moved from https://mimik.com/?p=80790 to https://mimik.com/our-events/fay-at-global-semiconductor-and-electronics-forum-2023/
+12:35:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/our-events/81933 (from https://mimik.com/our-events/5g-verizon-event/)
+12:35:04	Warning: 	Moved Permanently for https://mimik.com/?p=81933
+12:35:04	Warning: 	File has moved from https://mimik.com/?p=81933 to https://mimik.com/our-events/5g-verizon-event/
+12:35:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/our-events/81932 (from https://mimik.com/our-events/discover-hybrid-edgecloud-application-in-business-and-it/)
+12:35:04	Warning: 	Moved Permanently for https://mimik.com/?p=81932
+12:35:04	Warning: 	File has moved from https://mimik.com/?p=81932 to https://mimik.com/our-events/discover-hybrid-edgecloud-application-in-business-and-it/
+12:35:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/our-events/81929 (from https://mimik.com/our-events/entrepreneurship-innovation-ieee-5g-forum/)
+12:35:04	Warning: 	Moved Permanently for https://mimik.com/?p=81929
+12:35:04	Warning: 	File has moved from https://mimik.com/?p=81929 to https://mimik.com/our-events/entrepreneurship-innovation-ieee-5g-forum/
+12:35:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/our-events/81931 (from https://mimik.com/our-events/fay-arjomandi-11-with-cathie-wood/)
+12:35:04	Warning: 	Moved Permanently for https://mimik.com/?p=81931
+12:35:04	Warning: 	File has moved from https://mimik.com/?p=81931 to https://mimik.com/our-events/fay-arjomandi-11-with-cathie-wood/
+12:35:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/our-events/81494 (from https://mimik.com/our-events/idg-korea-edge-computing-summit-2021-event/)
+12:35:04	Warning: 	Moved Permanently for https://mimik.com/?p=81494
+12:35:04	Warning: 	File has moved from https://mimik.com/?p=81494 to https://mimik.com/our-events/idg-korea-edge-computing-summit-2021-event/
+12:35:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/our-events/81493 (from https://mimik.com/our-events/mec-mimik-paper-at-ieee-5g-world-forum-2021/)
+12:35:04	Warning: 	Moved Permanently for https://mimik.com/?p=81493
+12:35:04	Warning: 	File has moved from https://mimik.com/?p=81493 to https://mimik.com/our-events/mec-mimik-paper-at-ieee-5g-world-forum-2021/
+12:35:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/our-events/81483 (from https://mimik.com/our-events/singularity-university-of-south-africa-summit-2021/)
+12:35:04	Warning: 	Moved Permanently for https://mimik.com/?p=81483
+12:35:04	Warning: 	File has moved from https://mimik.com/?p=81483 to https://mimik.com/our-events/singularity-university-of-south-africa-summit-2021/
+12:35:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/our-events/81482 (from https://mimik.com/our-events/observations-on-decentralization/)
+12:35:04	Warning: 	Moved Permanently for https://mimik.com/?p=81482
+12:35:04	Warning: 	File has moved from https://mimik.com/?p=81482 to https://mimik.com/our-events/observations-on-decentralization/
+12:35:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/our-events/81936 (from https://mimik.com/our-events/edge-computing-ai-summit-2021/)
+12:35:04	Warning: 	Moved Permanently for https://mimik.com/?p=81936
+12:35:04	Warning: 	File has moved from https://mimik.com/?p=81936 to https://mimik.com/our-events/edge-computing-ai-summit-2021/
+12:35:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/our-events/81475 (from https://mimik.com/our-events/open-networking-edge-summit/)
+12:35:04	Warning: 	Moved Permanently for https://mimik.com/?p=81475
+12:35:04	Warning: 	File has moved from https://mimik.com/?p=81475 to https://mimik.com/our-events/open-networking-edge-summit/
+12:35:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/our-events/81930 (from https://mimik.com/our-events/state-of-the-stack-2021/)
+12:35:04	Warning: 	Moved Permanently for https://mimik.com/?p=81930
+12:35:04	Warning: 	File has moved from https://mimik.com/?p=81930 to https://mimik.com/our-events/state-of-the-stack-2021/
+12:35:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/our-events/81935 (from https://mimik.com/our-events/montreal-digital-book-2020/)
+12:35:04	Warning: 	Moved Permanently for https://mimik.com/?p=81935
+12:35:04	Warning: 	File has moved from https://mimik.com/?p=81935 to https://mimik.com/our-events/montreal-digital-book-2020/
+12:35:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/our-events/81922 (from https://mimik.com/our-events/montreal-digital-book-2021/)
+12:35:04	Warning: 	Moved Permanently for https://mimik.com/?p=81922
+12:35:04	Warning: 	File has moved from https://mimik.com/?p=81922 to https://mimik.com/our-events/montreal-digital-book-2021/
+12:35:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/our-events/81934 (from https://mimik.com/our-events/edge-computing-world-2020/)
+12:35:04	Warning: 	Moved Permanently for https://mimik.com/?p=81934
+12:35:04	Warning: 	File has moved from https://mimik.com/?p=81934 to https://mimik.com/our-events/edge-computing-world-2020/
+12:35:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/team-member/4651 (from https://mimik.com/team-member/fay-arjomandi-2/)
+12:35:04	Warning: 	Moved Permanently for https://mimik.com/?p=4651
+12:35:04	Warning: 	File has moved from https://mimik.com/?p=4651 to https://mimik.com/team-member/fay-arjomandi-2/
+12:35:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/team-member/4650 (from https://mimik.com/team-member/siavash-alamouti/)
+12:35:04	Warning: 	Moved Permanently for https://mimik.com/?p=4650
+12:35:04	Warning: 	File has moved from https://mimik.com/?p=4650 to https://mimik.com/team-member/siavash-alamouti/
+12:35:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/team-member/3257 (from https://mimik.com/team-member/catherine-d-wood/)
+12:35:04	Warning: 	Moved Permanently for https://mimik.com/?p=3257
+12:35:04	Warning: 	File has moved from https://mimik.com/?p=3257 to https://mimik.com/team-member/catherine-d-wood/
+12:35:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/team-member/3255 (from https://mimik.com/team-member/ori-sasson/)
+12:35:04	Warning: 	Moved Permanently for https://mimik.com/?p=3255
+12:35:04	Warning: 	File has moved from https://mimik.com/?p=3255 to https://mimik.com/team-member/ori-sasson/
+12:35:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/team-member/82607 (from https://mimik.com/team-member/faraj-aalaei/)
+12:35:04	Warning: 	Moved Permanently for https://mimik.com/?p=82607
+12:35:04	Warning: 	File has moved from https://mimik.com/?p=82607 to https://mimik.com/team-member/faraj-aalaei/
+12:35:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/team-member/3253 (from https://mimik.com/team-member/allen-salmasi/)
+12:35:04	Warning: 	Moved Permanently for https://mimik.com/?p=3253
+12:35:04	Warning: 	File has moved from https://mimik.com/?p=3253 to https://mimik.com/team-member/allen-salmasi/
+12:35:14	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/awsm_job_openings/3558 (from https://mimik.com/jobs/full-stack-developer/)
+12:35:14	Warning: 	Moved Permanently for https://mimik.com/?p=3558
+12:35:14	Warning: 	File has moved from https://mimik.com/?p=3558 to https://mimik.com/jobs/full-stack-developer/
+12:35:14	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/awsm_job_openings/3557 (from https://mimik.com/jobs/senior-software-development-engineer-in-test-sdet/)
+12:35:14	Warning: 	Moved Permanently for https://mimik.com/?p=3557
+12:35:14	Warning: 	File has moved from https://mimik.com/?p=3557 to https://mimik.com/jobs/senior-software-development-engineer-in-test-sdet/
+12:35:14	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/awsm_job_openings/3556 (from https://mimik.com/jobs/senior-ios-app-developer/)
+12:35:14	Warning: 	Moved Permanently for https://mimik.com/?p=3556
+12:35:14	Warning: 	File has moved from https://mimik.com/?p=3556 to https://mimik.com/jobs/senior-ios-app-developer/
+12:35:14	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/awsm_job_openings/3555 (from https://mimik.com/jobs/senior-android-app-developer/)
+12:35:14	Warning: 	Moved Permanently for https://mimik.com/?p=3555
+12:35:14	Warning: 	File has moved from https://mimik.com/?p=3555 to https://mimik.com/jobs/senior-android-app-developer/
+12:35:14	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/awsm_job_openings/3554 (from https://mimik.com/jobs/developer-community-lead/)
+12:35:14	Warning: 	Moved Permanently for https://mimik.com/?p=3554
+12:35:14	Warning: 	File has moved from https://mimik.com/?p=3554 to https://mimik.com/jobs/developer-community-lead/
+12:35:14	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/awsm_job_openings/3345 (from https://mimik.com/jobs/__trashed/)
+12:35:14	Warning: 	Moved Permanently for https://mimik.com/?p=3345
+12:35:14	Warning: 	File has moved from https://mimik.com/?p=3345 to https://mimik.com/jobs/__trashed/
+12:35:14	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/awsm_job_openings/3213 (from https://mimik.com/jobs/senior-c-unreal-game-programmer/)
+12:35:14	Warning: 	Moved Permanently for https://mimik.com/?p=3213
+12:35:14	Warning: 	File has moved from https://mimik.com/?p=3213 to https://mimik.com/jobs/senior-c-unreal-game-programmer/
+12:35:14	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/awsm_job_openings/3212 (from https://mimik.com/jobs/product-management-leader/)
+12:35:14	Warning: 	Moved Permanently for https://mimik.com/?p=3212
+12:35:14	Warning: 	File has moved from https://mimik.com/?p=3212 to https://mimik.com/jobs/product-management-leader/
+12:35:14	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/awsm_job_openings/3211 (from https://mimik.com/jobs/qa-lead/)
+12:35:14	Warning: 	Moved Permanently for https://mimik.com/?p=3211
+12:35:14	Warning: 	File has moved from https://mimik.com/?p=3211 to https://mimik.com/jobs/qa-lead/
+12:35:14	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/awsm_job_openings/3210 (from https://mimik.com/jobs/agile-project-manager/)
+12:35:14	Warning: 	Moved Permanently for https://mimik.com/?p=3210
+12:35:14	Warning: 	File has moved from https://mimik.com/?p=3210 to https://mimik.com/jobs/agile-project-manager/
+12:35:14	Error: 	"Not Found" (404) at link https://mimik.com/wp-json/wp/v2/users/13 (from https://mimik.com/author/kimiar/)
+12:35:17	Warning: 	Link https://mimik.com/author/siavash/page/2/ not scanned (follow robots meta tag)
+12:35:17	Error: 	"Not Found" (404) at link https://mimik.com/wp-json/wp/v2/users/7 (from https://mimik.com/author/siavash/)
+12:35:57	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/52083 (from https://mimik.com/house-of-commons-of-canada-on-the-outbreak-of-the-corona-virus-w-google-mimik-ibm-short-ver/)
+12:35:57	Warning: 	Moved Permanently for https://mimik.com/?p=52083
+12:35:57	Warning: 	File has moved from https://mimik.com/?p=52083 to https://mimik.com/house-of-commons-of-canada-on-the-outbreak-of-the-corona-virus-w-google-mimik-ibm-short-ver/
+12:36:00	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/46145 (from https://mimik.com/will-decentralisation-help-bring-silicon-valley-back-to-its-roots/)
+12:36:00	Warning: 	Moved Permanently for https://mimik.com/?p=46145
+12:36:00	Warning: 	File has moved from https://mimik.com/?p=46145 to https://mimik.com/will-decentralisation-help-bring-silicon-valley-back-to-its-roots/
+12:36:03	Warning: 	Link https://mimik.com/author/mimik/page/2/ not scanned (follow robots meta tag)
+12:36:03	Error: 	"Not Found" (404) at link https://mimik.com/wp-json/wp/v2/users/12 (from https://mimik.com/author/mimik/)
+12:36:06	Warning: 	Link https://mimik.com/author/mimik/page/3/ not scanned (follow robots meta tag)
+12:36:06	Warning: 	Link https://mimik.com/author/mimik/page/5/ not scanned (follow robots meta tag)
+12:36:06	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/51456 (from https://mimik.com/b-c-contact-tracing-app-tackles-canadians-privacy-concerns/)
+12:36:06	Warning: 	Moved Permanently for https://mimik.com/?p=51456
+12:36:06	Warning: 	File has moved from https://mimik.com/?p=51456 to https://mimik.com/b-c-contact-tracing-app-tackles-canadians-privacy-concerns/
+12:36:09	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/52308 (from https://mimik.com/privacy-concerns-about-covid-tracing-app-2/)
+12:36:09	Warning: 	Moved Permanently for https://mimik.com/?p=52308
+12:36:09	Warning: 	File has moved from https://mimik.com/?p=52308 to https://mimik.com/privacy-concerns-about-covid-tracing-app-2/
+12:36:09	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/50642 (from https://mimik.com/mimik-improves-h2-wellnesss-profit-margins-with-hybrid-edge-cloud/)
+12:36:09	Warning: 	Moved Permanently for https://mimik.com/?p=50642
+12:36:09	Warning: 	File has moved from https://mimik.com/?p=50642 to https://mimik.com/mimik-improves-h2-wellnesss-profit-margins-with-hybrid-edge-cloud/
+12:36:09	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/74178 (from https://mimik.com/open-networking-edge-summit/)
+12:36:09	Warning: 	Moved Permanently for https://mimik.com/?p=74178
+12:36:09	Warning: 	File has moved from https://mimik.com/?p=74178 to https://mimik.com/open-networking-edge-summit/
+12:36:20	Warning: 	Link https://mimik.com/category/events/page/2/ not scanned (follow robots meta tag)
+12:36:20	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/categories/85 (from https://mimik.com/category/events/)
+12:36:50	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/75248 (from https://mimik.com/observations-on-decentralization/)
+12:36:50	Warning: 	Moved Permanently for https://mimik.com/?p=75248
+12:36:50	Warning: 	File has moved from https://mimik.com/?p=75248 to https://mimik.com/observations-on-decentralization/
+12:36:50	Warning: 	Link https://mimik.com/author/michel/page/2/ not scanned (follow robots meta tag)
+12:36:50	Error: 	"Not Found" (404) at link https://mimik.com/wp-json/wp/v2/users/9 (from https://mimik.com/author/michel/)
+12:37:17	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/72543 (from https://mimik.com/mec-mimik-paper-at-ieee-5g-world-forum-2021/)
+12:37:17	Warning: 	Moved Permanently for https://mimik.com/?p=72543
+12:37:17	Warning: 	File has moved from https://mimik.com/?p=72543 to https://mimik.com/mec-mimik-paper-at-ieee-5g-world-forum-2021/
+12:37:17	Warning: 	Link https://mimik.com/author/fay/page/2/ not scanned (follow robots meta tag)
+12:37:17	Error: 	"Not Found" (404) at link https://mimik.com/wp-json/wp/v2/users/8 (from https://mimik.com/author/fay/)
+12:37:35	Warning: 	Link https://mimik.com/author/fay/page/3/ not scanned (follow robots meta tag)
+12:37:35	Warning: 	Link https://mimik.com/author/fay/page/4/ not scanned (follow robots meta tag)
+12:37:35	Error: 	"Not Found" (404) at link https://mimik.com/wp-json/wp/v2/users/10 (from https://mimik.com/author/bob/)
+12:37:35	Warning: 	Moved Permanently for www.google.com/intl/en/ads/
+12:37:35	Warning: 	File has moved from www.google.com/intl/en/ads/ to https://ads.google.com/intl/en/home/
+12:37:35	Warning: 	Moved Permanently for www.google.com/services/
+12:37:35	Warning: 	Redirected link is identical because of 'URL Hack' option: www.google.com/services/ and https://www.google.com/services/
+12:37:35	Warning: 	File has moved from www.google.com/services/ to https://www.google.com/services/
+12:37:35	Warning: 	Moved Permanently for www.google.com/intl/en/about/
+12:37:35	Warning: 	File has moved from www.google.com/intl/en/about/ to https://about.google/intl/en/
+12:37:37	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/51509 (from https://mimik.com/how-mobile-phones-could-help-trace-the-spread-of-covid-infections/)
+12:37:37	Warning: 	Moved Permanently for https://mimik.com/?p=51509
+12:37:37	Warning: 	File has moved from https://mimik.com/?p=51509 to https://mimik.com/how-mobile-phones-could-help-trace-the-spread-of-covid-infections/
+12:37:37	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/49047 (from https://mimik.com/vmblog-expert-interviews-siavash-alamouti-of-mimik-talks-edge-cloud/)
+12:37:37	Warning: 	Moved Permanently for https://mimik.com/?p=49047
+12:37:37	Warning: 	File has moved from https://mimik.com/?p=49047 to https://mimik.com/vmblog-expert-interviews-siavash-alamouti-of-mimik-talks-edge-cloud/
+12:37:37	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/52041 (from https://mimik.com/siavash-alamouti-drive-to-decentralize-the-cloud/)
+12:37:37	Warning: 	Moved Permanently for https://mimik.com/?p=52041
+12:37:37	Warning: 	File has moved from https://mimik.com/?p=52041 to https://mimik.com/siavash-alamouti-drive-to-decentralize-the-cloud/
+12:37:37	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/52039 (from https://mimik.com/future-of-mimik/)
+12:37:37	Warning: 	Moved Permanently for https://mimik.com/?p=52039
+12:37:37	Warning: 	File has moved from https://mimik.com/?p=52039 to https://mimik.com/future-of-mimik/
+12:37:37	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/52033 (from https://mimik.com/principles-of-decentralization-2/)
+12:37:37	Warning: 	Moved Permanently for https://mimik.com/?p=52033
+12:37:37	Warning: 	File has moved from https://mimik.com/?p=52033 to https://mimik.com/principles-of-decentralization-2/
+12:37:37	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/52027 (from https://mimik.com/unleashing-computing-power-w-decentralization-edge-cloud-computing/)
+12:37:37	Warning: 	Moved Permanently for https://mimik.com/?p=52027
+12:37:37	Warning: 	File has moved from https://mimik.com/?p=52027 to https://mimik.com/unleashing-computing-power-w-decentralization-edge-cloud-computing/
+12:37:37	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/52023 (from https://mimik.com/decentralization-its-drivers/)
+12:37:37	Warning: 	Moved Permanently for https://mimik.com/?p=52023
+12:37:37	Warning: 	File has moved from https://mimik.com/?p=52023 to https://mimik.com/decentralization-its-drivers/
+12:37:37	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/52021 (from https://mimik.com/benefits-of-decentralization/)
+12:37:37	Warning: 	Moved Permanently for https://mimik.com/?p=52021
+12:37:37	Warning: 	File has moved from https://mimik.com/?p=52021 to https://mimik.com/benefits-of-decentralization/
+12:37:37	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/52019 (from https://mimik.com/decentralization-people/)
+12:37:37	Warning: 	Moved Permanently for https://mimik.com/?p=52019
+12:37:37	Warning: 	File has moved from https://mimik.com/?p=52019 to https://mimik.com/decentralization-people/
+12:37:37	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/52017 (from https://mimik.com/principles-of-decentralization/)
+12:37:37	Warning: 	Moved Permanently for https://mimik.com/?p=52017
+12:37:37	Warning: 	File has moved from https://mimik.com/?p=52017 to https://mimik.com/principles-of-decentralization/
+12:37:37	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/52015 (from https://mimik.com/challenges-of-decentralization-digital-freedom/)
+12:37:37	Warning: 	Moved Permanently for https://mimik.com/?p=52015
+12:37:37	Warning: 	File has moved from https://mimik.com/?p=52015 to https://mimik.com/challenges-of-decentralization-digital-freedom/
+12:37:37	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/52009 (from https://mimik.com/a-pragmatic-approach-to-cloud-decentralization-hanoi-vietnam/)
+12:37:37	Warning: 	Moved Permanently for https://mimik.com/?p=52009
+12:37:37	Warning: 	File has moved from https://mimik.com/?p=52009 to https://mimik.com/a-pragmatic-approach-to-cloud-decentralization-hanoi-vietnam/
+12:37:37	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/52007 (from https://mimik.com/is-5g-the-answer-to-central-cloud-challenges/)
+12:37:37	Warning: 	Moved Permanently for https://mimik.com/?p=52007
+12:37:37	Warning: 	File has moved from https://mimik.com/?p=52007 to https://mimik.com/is-5g-the-answer-to-central-cloud-challenges/
+12:37:37	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/51988 (from https://mimik.com/decentralization-of-cloud-siavash-alamoutis-keynote-at-pimrc-2017-in-montreal-canada/)
+12:37:37	Warning: 	Moved Permanently for https://mimik.com/?p=51988
+12:37:37	Warning: 	File has moved from https://mimik.com/?p=51988 to https://mimik.com/decentralization-of-cloud-siavash-alamoutis-keynote-at-pimrc-2017-in-montreal-canada/
+12:37:37	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/52085 (from https://mimik.com/made-in-bc-app-for-contact-tracing-pandimik-on-global-news-canada/)
+12:37:37	Warning: 	Moved Permanently for https://mimik.com/?p=52085
+12:37:37	Warning: 	File has moved from https://mimik.com/?p=52085 to https://mimik.com/made-in-bc-app-for-contact-tracing-pandimik-on-global-news-canada/
+12:37:37	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/44806 (from https://mimik.com/are-developers-ready-for-edge-cloud-computing/)
+12:37:37	Warning: 	Moved Permanently for https://mimik.com/?p=44806
+12:37:37	Warning: 	File has moved from https://mimik.com/?p=44806 to https://mimik.com/are-developers-ready-for-edge-cloud-computing/
+12:37:40	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/72450 (from https://mimik.com/idg-edge-computing-summit-2021-event-south-korea/)
+12:37:40	Warning: 	Moved Permanently for https://mimik.com/?p=72450
+12:37:40	Warning: 	File has moved from https://mimik.com/?p=72450 to https://mimik.com/idg-edge-computing-summit-2021-event-south-korea/
+12:37:40	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/52316 (from https://mimik.com/privacy-concerns-about-covid-tracing-app/)
+12:37:40	Warning: 	Moved Permanently for https://mimik.com/?p=52316
+12:37:40	Warning: 	File has moved from https://mimik.com/?p=52316 to https://mimik.com/privacy-concerns-about-covid-tracing-app/
+12:37:40	Warning: 	Link https://mimik.com/author/sam/page/2/ not scanned (follow robots meta tag)
+12:37:40	Error: 	"Not Found" (404) at link https://mimik.com/wp-json/wp/v2/users/11 (from https://mimik.com/author/sam/)
+12:38:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/61388 (from https://mimik.com/edge-computing-ai-summit-2021/)
+12:38:04	Warning: 	Moved Permanently for https://mimik.com/?p=61388
+12:38:04	Warning: 	File has moved from https://mimik.com/?p=61388 to https://mimik.com/edge-computing-ai-summit-2021/
+12:38:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/74541 (from https://mimik.com/discover-hybrid-edgecloud-application-in-business-and-it/)
+12:38:04	Warning: 	Moved Permanently for https://mimik.com/?p=74541
+12:38:04	Warning: 	File has moved from https://mimik.com/?p=74541 to https://mimik.com/discover-hybrid-edgecloud-application-in-business-and-it/
+12:38:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/73271 (from https://mimik.com/singularity-university-of-south-africa-summit-2021/)
+12:38:04	Warning: 	Moved Permanently for https://mimik.com/?p=73271
+12:38:04	Warning: 	File has moved from https://mimik.com/?p=73271 to https://mimik.com/singularity-university-of-south-africa-summit-2021/
+12:38:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/70468 (from https://mimik.com/montreal-digital-book-2021/)
+12:38:04	Warning: 	Moved Permanently for https://mimik.com/?p=70468
+12:38:04	Warning: 	File has moved from https://mimik.com/?p=70468 to https://mimik.com/montreal-digital-book-2021/
+12:38:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/70383 (from https://mimik.com/entrepreneurship-innovation-ieee-5g-forum/)
+12:38:04	Warning: 	Moved Permanently for https://mimik.com/?p=70383
+12:38:04	Warning: 	File has moved from https://mimik.com/?p=70383 to https://mimik.com/entrepreneurship-innovation-ieee-5g-forum/
+12:38:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/65884 (from https://mimik.com/state-of-the-stack-2021/)
+12:38:04	Warning: 	Moved Permanently for https://mimik.com/?p=65884
+12:38:04	Warning: 	File has moved from https://mimik.com/?p=65884 to https://mimik.com/state-of-the-stack-2021/
+12:38:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/74583 (from https://mimik.com/fay-arjomandi-11-with-cathie-wood-2/)
+12:38:04	Warning: 	Moved Permanently for https://mimik.com/?p=74583
+12:38:04	Warning: 	File has moved from https://mimik.com/?p=74583 to https://mimik.com/fay-arjomandi-11-with-cathie-wood-2/
+12:38:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/62062 (from https://mimik.com/interoperability-and-ecosystem/)
+12:38:04	Warning: 	Moved Permanently for https://mimik.com/?p=62062
+12:38:04	Warning: 	File has moved from https://mimik.com/?p=62062 to https://mimik.com/interoperability-and-ecosystem/
+12:38:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/62055 (from https://mimik.com/digital-transformation/)
+12:38:04	Warning: 	Moved Permanently for https://mimik.com/?p=62055
+12:38:04	Warning: 	File has moved from https://mimik.com/?p=62055 to https://mimik.com/digital-transformation/
+12:38:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/61856 (from https://mimik.com/data-privacy/)
+12:38:04	Warning: 	Moved Permanently for https://mimik.com/?p=61856
+12:38:04	Warning: 	File has moved from https://mimik.com/?p=61856 to https://mimik.com/data-privacy/
+12:38:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/61820 (from https://mimik.com/hybrid-edgecloud-ai-enabled-applications/)
+12:38:04	Warning: 	Moved Permanently for https://mimik.com/?p=61820
+12:38:04	Warning: 	File has moved from https://mimik.com/?p=61820 to https://mimik.com/hybrid-edgecloud-ai-enabled-applications/
+12:38:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/61586 (from https://mimik.com/5g-verizon-event/)
+12:38:04	Warning: 	Moved Permanently for https://mimik.com/?p=61586
+12:38:04	Warning: 	File has moved from https://mimik.com/?p=61586 to https://mimik.com/5g-verizon-event/
+12:38:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/62626 (from https://mimik.com/mimik-hybrid-edge-cloud-leveraging-aws-to-support-edge-microservice-mesh/)
+12:38:04	Warning: 	Moved Permanently for https://mimik.com/?p=62626
+12:38:04	Warning: 	File has moved from https://mimik.com/?p=62626 to https://mimik.com/mimik-hybrid-edge-cloud-leveraging-aws-to-support-edge-microservice-mesh/
+12:38:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/79781 (from https://mimik.com/microservice-based-solutions-in-a-hybrid-edge-cloud-environment/)
+12:38:04	Warning: 	Moved Permanently for https://mimik.com/?p=79781
+12:38:04	Warning: 	File has moved from https://mimik.com/?p=79781 to https://mimik.com/microservice-based-solutions-in-a-hybrid-edge-cloud-environment/
+12:38:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/52059 (from https://mimik.com/edgesdk-familiar-apis/)
+12:38:04	Warning: 	Moved Permanently for https://mimik.com/?p=52059
+12:38:04	Warning: 	File has moved from https://mimik.com/?p=52059 to https://mimik.com/edgesdk-familiar-apis/
+12:38:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/52057 (from https://mimik.com/where-to-run-microservices/)
+12:38:04	Warning: 	Moved Permanently for https://mimik.com/?p=52057
+12:38:04	Warning: 	File has moved from https://mimik.com/?p=52057 to https://mimik.com/where-to-run-microservices/
+12:38:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/52055 (from https://mimik.com/edgesdk-updating-existing-applications/)
+12:38:04	Warning: 	Moved Permanently for https://mimik.com/?p=52055
+12:38:04	Warning: 	File has moved from https://mimik.com/?p=52055 to https://mimik.com/edgesdk-updating-existing-applications/
+12:38:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/52051 (from https://mimik.com/microservices-edge-cloud-computing-michel-burger/)
+12:38:04	Warning: 	Moved Permanently for https://mimik.com/?p=52051
+12:38:04	Warning: 	File has moved from https://mimik.com/?p=52051 to https://mimik.com/microservices-edge-cloud-computing-michel-burger/
+12:38:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/52047 (from https://mimik.com/transitioning-to-microservices/)
+12:38:04	Warning: 	Moved Permanently for https://mimik.com/?p=52047
+12:38:04	Warning: 	File has moved from https://mimik.com/?p=52047 to https://mimik.com/transitioning-to-microservices/
+12:38:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/52045 (from https://mimik.com/who-would-benefit-from-edgesdk/)
+12:38:04	Warning: 	Moved Permanently for https://mimik.com/?p=52045
+12:38:04	Warning: 	File has moved from https://mimik.com/?p=52045 to https://mimik.com/who-would-benefit-from-edgesdk/
+12:38:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/52043 (from https://mimik.com/what-is-mimik-edgesdk/)
+12:38:04	Warning: 	Moved Permanently for https://mimik.com/?p=52043
+12:38:04	Warning: 	File has moved from https://mimik.com/?p=52043 to https://mimik.com/what-is-mimik-edgesdk/
+12:38:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/71981 (from https://mimik.com/what-is-hybrid-edgecloud-and-why-will-it-change-the-way-we-develop-apps/)
+12:38:04	Warning: 	Moved Permanently for https://mimik.com/?p=71981
+12:38:04	Warning: 	File has moved from https://mimik.com/?p=71981 to https://mimik.com/what-is-hybrid-edgecloud-and-why-will-it-change-the-way-we-develop-apps/
+12:38:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/64482 (from https://mimik.com/it-and-business-innovation-with-edge-computing-trends/)
+12:38:04	Warning: 	Moved Permanently for https://mimik.com/?p=64482
+12:38:04	Warning: 	File has moved from https://mimik.com/?p=64482 to https://mimik.com/it-and-business-innovation-with-edge-computing-trends/
+12:38:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/64422 (from https://mimik.com/fay-arjomandi-11-with-cathie-wood/)
+12:38:04	Warning: 	Moved Permanently for https://mimik.com/?p=64422
+12:38:04	Warning: 	File has moved from https://mimik.com/?p=64422 to https://mimik.com/fay-arjomandi-11-with-cathie-wood/
+12:38:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/64415 (from https://mimik.com/fay-arjomandi-11-with-cathie-wood-why-have-you-decided-to-invest-in-mimik/)
+12:38:04	Warning: 	Moved Permanently for https://mimik.com/?p=64415
+12:38:04	Warning: 	File has moved from https://mimik.com/?p=64415 to https://mimik.com/fay-arjomandi-11-with-cathie-wood-why-have-you-decided-to-invest-in-mimik/
+12:38:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/65154 (from https://mimik.com/forecasting-market-growth-rates-based-on-production-costs/)
+12:38:04	Warning: 	Moved Permanently for https://mimik.com/?p=65154
+12:38:04	Warning: 	File has moved from https://mimik.com/?p=65154 to https://mimik.com/forecasting-market-growth-rates-based-on-production-costs/
+12:38:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/64342 (from https://mimik.com/future-of-investment-is-investing-in-the-future/)
+12:38:04	Warning: 	Moved Permanently for https://mimik.com/?p=64342
+12:38:04	Warning: 	File has moved from https://mimik.com/?p=64342 to https://mimik.com/future-of-investment-is-investing-in-the-future/
+12:38:04	Error: 	"Not Found" (404) at link www.google.com/intl/en/policies/privacy/curl (from www.google.com/intl/en/policies/privacy/)
+12:38:04	Error: 	"Not Found" (404) at link www.google.com/intl/en/policies/terms/curl (from www.google.com/intl/en/policies/terms/)
+12:38:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/46152 (from https://mimik.com/fay-arjomandi-recognized-as-concordia-university-alumni-of-the-year/)
+12:38:04	Warning: 	Moved Permanently for https://mimik.com/?p=46152
+12:38:04	Warning: 	File has moved from https://mimik.com/?p=46152 to https://mimik.com/fay-arjomandi-recognized-as-concordia-university-alumni-of-the-year/
+12:38:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/63652 (from https://mimik.com/defining-edge-and-hybrid-edgecloud-blog/)
+12:38:04	Warning: 	Moved Permanently for https://mimik.com/?p=63652
+12:38:04	Warning: 	File has moved from https://mimik.com/?p=63652 to https://mimik.com/defining-edge-and-hybrid-edgecloud-blog/
+12:38:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/62164 (from https://mimik.com/defining-edge-and-hybrid-edgecloud/)
+12:38:04	Warning: 	Moved Permanently for https://mimik.com/?p=62164
+12:38:04	Warning: 	File has moved from https://mimik.com/?p=62164 to https://mimik.com/defining-edge-and-hybrid-edgecloud/
+12:38:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/59066 (from https://mimik.com/how-the-5g-technology-landscape-reaches-early-success-level-2/)
+12:38:04	Warning: 	Moved Permanently for https://mimik.com/?p=59066
+12:38:04	Warning: 	File has moved from https://mimik.com/?p=59066 to https://mimik.com/how-the-5g-technology-landscape-reaches-early-success-level-2/
+12:38:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/64432 (from https://mimik.com/what-is-mimik-hybrid-edgecloud-platform/)
+12:38:04	Warning: 	Moved Permanently for https://mimik.com/?p=64432
+12:38:04	Warning: 	File has moved from https://mimik.com/?p=64432 to https://mimik.com/what-is-mimik-hybrid-edgecloud-platform/
+12:38:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/56365 (from https://mimik.com/mimik-access-expire-beam-part-6-6/)
+12:38:04	Warning: 	Moved Permanently for https://mimik.com/?p=56365
+12:38:04	Warning: 	File has moved from https://mimik.com/?p=56365 to https://mimik.com/mimik-access-expire-beam-part-6-6/
+12:38:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/56361 (from https://mimik.com/mimik-access-wifi-beaming-adding-friends-part-5-6/)
+12:38:04	Warning: 	Moved Permanently for https://mimik.com/?p=56361
+12:38:04	Warning: 	File has moved from https://mimik.com/?p=56361 to https://mimik.com/mimik-access-wifi-beaming-adding-friends-part-5-6/
+12:38:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/56357 (from https://mimik.com/mimik-access-hosted-content-part-4-6/)
+12:38:04	Warning: 	Moved Permanently for https://mimik.com/?p=56357
+12:38:04	Warning: 	File has moved from https://mimik.com/?p=56357 to https://mimik.com/mimik-access-hosted-content-part-4-6/
+12:38:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/56352 (from https://mimik.com/mimik-access-adding-shared-content-part-3-6/)
+12:38:04	Warning: 	Moved Permanently for https://mimik.com/?p=56352
+12:38:04	Warning: 	File has moved from https://mimik.com/?p=56352 to https://mimik.com/mimik-access-adding-shared-content-part-3-6/
+12:38:04	Warning: 	HTML file (602 bytes) retransferred due to lack of cache: unpkg.com/
+12:38:04	Warning: 	HTML file (95008 bytes) retransferred due to lack of cache: https://mimik.com/feed/
+12:38:04	Warning: 	HTML file (732 bytes) retransferred due to lack of cache: https://mimik.com/comments/feed/
+12:38:05	Warning: 	Moved Permanently for unpkg.com/
+12:38:05	Warning: 	Redirected link is identical because of 'URL Hack' option: unpkg.com/ and https://unpkg.com/
+12:38:05	Warning: 	File has moved from unpkg.com/ to https://unpkg.com/
+12:38:05	Warning: 	HTML file (622 bytes) retransferred due to lack of cache: static.addtoany.com/
+12:38:06	Warning: 	Moved Permanently for static.addtoany.com/
+12:38:06	Warning: 	Redirected link is identical because of 'URL Hack' option: static.addtoany.com/ and https://static.addtoany.com/
+12:38:06	Warning: 	File has moved from static.addtoany.com/ to https://static.addtoany.com/
+12:38:07	Warning: 	HTML file (342903 bytes) retransferred due to lack of cache: https://mimik.com/wp-json/
+12:38:08	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2F
+12:38:08	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://unpkg.com/@lottiefiles/lottie-player@1.5.5/dist/lottie-player.js
+12:38:09	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-content/plugins/bricksable/includes/elements/lottie/assets/js/frontend.min.js?ver=1.6.50
+12:38:12	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://js.hsforms.net/forms/embed/v2.js?ver=11.1.6
+12:38:21	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fproducts%2F
+12:38:23	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fsectors%2Fautomotive%2F
+12:38:24	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fsectors%2Findustrial-automation%2F
+12:38:25	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fsectors%2Fedgeai%2F
+12:38:26	Warning: 	HTML file (124259 bytes) retransferred due to lack of cache: https://mimik.com/category/blog/feed/
+12:38:26	Warning: 	HTML file (41851 bytes) retransferred due to lack of cache: https://mimik.com/category/whitepapers/feed/
+12:38:26	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://js.hsforms.net/forms/embed/v2.js?ver=11.1.13
+12:38:26	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fresources%2F
+12:38:28	Warning: 	HTML file (66186 bytes) retransferred due to lack of cache: https://mimik.com/category/news/feed/
+12:38:28	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Four-events%2F
+12:38:28	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fabout-mimik%2F
+12:38:31	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fawards%2F
+12:38:31	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fmeet-the-team%2F
+12:38:31	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fclients%2F
+12:38:32	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fjob-openings%2F
+12:38:33	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Frequest-a-demo%2F
+12:38:33	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fhec%2F
+12:38:33	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fcontact-us%2F
+12:38:33	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fbuilding-blocks-to-empower-cognitive-internet-with-hybrid-edgecloud%2F
+12:38:35	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fmimik-collaborates-with-marelli-ces-2024%2F
+12:38:35	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fbridging-worlds-hybrid-edge-cloud-and-distributed-ledger-reshaping-digital-services-knowledge-exchange%2F
+12:38:37	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fmimik-technology-and-blackberry-collaborate-to-accelerate-software-defined-vehicles%2F
+12:38:37	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fcathie-wood-joins-mimik-technologys-board-of-directors%2F
+12:38:37	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fmimik-and-business-decision-partner-to-accelerate-adoption-of-industry-4-0-technologies%2F
+12:38:38	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Ftttechauto-and-mimik-partnership-to-accelerate-software-defined-vehicles-and-smart-mobility%2F
+12:38:40	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fterms-of-service%2F
+12:38:40	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fblog%2F
+12:38:40	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fthe-four-stages-of-edge-ai%2F
+12:38:40	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fprivacy-policy-2%2F
+12:38:42	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fmec-mimik-one-plus-one-equals-eleven%2F
+12:38:42	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fendpoint-device-security-the-missing-link-in-sase%2F
+12:38:42	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fhybrid-edge-cloud-a-pragmatic-approach-for-decentralized-cloud-computing%2F
+12:38:44	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Four-events%2Fmeet-mimik-team-at-ces-2024%2F
+12:38:44	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fmimiks-platform-adopted-by-marelli%2F
+12:38:44	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fmimik-appoints-simon-edelhaus%2F
+12:38:46	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Four-events%2Fapi-world-2023-meet-mimik-cto-michel-burger-2%2F
+12:38:46	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Four-events%2Fvirtual-api-world-2023-michel-burger%2F
+12:38:46	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fbeyond-boundaries%2F
+12:38:48	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fmimik-for-digital-twin%2F
+12:38:49	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fharnessing-the-power-of-hybrid-edge-cloud-revolutionizing-app-development-with-mimik%2F
+12:38:49	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fthe-journey-to-autonomy-unleashing-the-power-within%2F
+12:38:51	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://www.vishay.com/docs/48708/ig18692481_vacuum_cleaner_robots.pdf
+12:38:51	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Funderstanding-the-limitations-of-using-kubernetes-at-the-edge%2F
+12:38:51	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fa-primer-to-geolocation-detection-on-the-edge%2F
+12:38:51	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Funderstanding-the-limits-of-replication-and-redundancy-under-edge-architectures%2F
+12:38:53	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Ftaking-a-device-centric-approach-to-edge-computing%2F
+12:38:53	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fhow-to-address-safety-and-security-for-software-defined-vehicles%2F
+12:38:53	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Funlocking-the-next-gen-of-apps-for-the-hyper-connected-world%2F
+12:38:55	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fthe-autonomous-world-is-horizontal-not-vertical%2F
+12:38:55	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fthree-tech-industry-trends-to-watch-2%2F
+12:38:55	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fhow-to-make-way-for-the-hybrid-edge-cloud-in-your-digital-transformation-2%2F
+12:38:56	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fusing-mimik-hybrid-edge-cloud-with-aws-greengrass%2F
+12:38:57	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fcloud-decentralization-trustless-revolution%2F
+12:38:57	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fas-network-chokes%2F
+12:38:57	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fapplication-of-mimik-decentralized-edge-cloud-plattform-for-manufacturing%2F
+12:38:58	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fdigital-freedom%2F
+12:38:59	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fmimik-academy-celebrates-its-3rd-year-anniversary%2F
+12:39:01	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fmimik-day%2F
+12:39:01	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fmimik-edgeengine-the-essential-bridge-to-the-open-horizon-solution%2F
+12:39:01	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fdo-the-right-thing-all-the-timean-interview-with-siavash-alamouti%2F
+12:39:01	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Ftata-elxsi-and-mimik-technology-partner-to-deliver-5g-services-forindustry-4-0-automotive-media-distribution-solutions%2F
+12:39:03	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fdemocratizing-internet-access-2022-marconi-prize-awarded-to-wireless-innovator-siavash-alamouti%2F
+12:39:03	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fmimik-executive-chairman-siavash-alamouti-awarded-prestigious-2022-marconi-prize%2F
+12:39:03	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fmimik-technology-joins-lf-edge-community-in-collaboration-with-open-horizon%2F
+12:39:03	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fmimik-technology-and-claysol-media-labs-partner%2F
+12:39:05	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Four-events%2Ffay-at-global-semiconductor-and-electronics-forum-2023%2F
+12:39:05	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Four-events%2F5g-verizon-event%2F
+12:39:05	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fmimik-technology-closes-14-3-million-extended-series-a-funding-round-led-by-pier-88%2F
+12:39:05	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Four-events%2Fdiscover-hybrid-edgecloud-application-in-business-and-it%2F
+12:39:07	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Four-events%2Ffay-arjomandi-11-with-cathie-wood%2F
+12:39:07	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Four-events%2Fentrepreneurship-innovation-ieee-5g-forum%2F
+12:39:09	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Four-events%2Fidg-korea-edge-computing-summit-2021-event%2F
+12:39:11	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Four-events%2Fmec-mimik-paper-at-ieee-5g-world-forum-2021%2F
+12:39:13	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Four-events%2Fsingularity-university-of-south-africa-summit-2021%2F
+12:39:15	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Four-events%2Fobservations-on-decentralization%2F
+12:39:16	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Four-events%2Fedge-computing-ai-summit-2021%2F
+12:39:18	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Four-events%2Fopen-networking-edge-summit%2F
+12:39:18	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Four-events%2Fstate-of-the-stack-2021%2F
+12:39:20	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Four-events%2Fmontreal-digital-book-2020%2F
+12:39:22	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Four-events%2Fmontreal-digital-book-2021%2F
+12:39:24	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Four-events%2Fedge-computing-world-2020%2F
+12:39:27	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/pages/9 (from https://mimik.com/)
+12:39:51	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fteam-member%2Ffay-arjomandi-2%2F
+12:39:53	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fteam-member%2Fsiavash-alamouti%2F
+12:39:53	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fteam-member%2Fcatherine-d-wood%2F
+12:39:55	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fteam-member%2Fori-sasson%2F
+12:39:55	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fteam-member%2Ffaraj-aalaei%2F
+12:39:57	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fteam-member%2Fallen-salmasi%2F
+12:39:57	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://www.google.com/recaptcha/api.js?ver=2.0
+12:55:27	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fjobs%2Fsenior-software-development-engineer-in-test-sdet%2F
+12:55:27	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fjobs%2Fsenior-ios-app-developer%2F
+12:55:28	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fjobs%2Fsenior-android-app-developer%2F
+12:55:29	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fjobs%2Fdeveloper-community-lead%2F
+12:55:30	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fjobs%2F__trashed%2F
+12:55:31	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fjobs%2Fsenior-c-unreal-game-programmer%2F
+12:55:32	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fjobs%2Fproduct-management-leader%2F
+12:55:33	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fjobs%2Fqa-lead%2F
+12:55:33	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fjobs%2Fagile-project-manager%2F
+12:55:34	Warning: 	HTML file (11484 bytes) retransferred due to lack of cache: https://mimik.com/author/kimiar/feed/
+12:55:35	Warning: 	HTML file (34585 bytes) retransferred due to lack of cache: https://mimik.com/author/siavash/feed/
+12:55:37	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fhouse-of-commons-of-canada-on-the-outbreak-of-the-corona-virus-w-google-mimik-ibm-short-ver%2F
+12:55:38	Warning: 	HTML file (67124 bytes) retransferred due to lack of cache: https://mimik.com/author/mimik/feed/
+12:55:38	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fwill-decentralisation-help-bring-silicon-valley-back-to-its-roots%2F
+12:55:39	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fb-c-contact-tracing-app-tackles-canadians-privacy-concerns%2F
+12:55:41	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fprivacy-concerns-about-covid-tracing-app-2%2F
+12:55:41	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fmimik-improves-h2-wellnesss-profit-margins-with-hybrid-edge-cloud%2F
+12:55:42	Warning: 	HTML file (40066 bytes) retransferred due to lack of cache: https://mimik.com/category/events/feed/
+12:55:42	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fopen-networking-edge-summit%2F
+12:55:43	Warning: 	HTML file (69575 bytes) retransferred due to lack of cache: https://mimik.com/author/michel/feed/
+12:55:43	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fobservations-on-decentralization%2F
+12:55:45	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fmec-mimik-paper-at-ieee-5g-world-forum-2021%2F
+12:55:45	Warning: 	HTML file (39832 bytes) retransferred due to lack of cache: https://mimik.com/author/fay/feed/
+12:55:45	Warning: 	HTML file (64931 bytes) retransferred due to lack of cache: https://mimik.com/author/bob/feed/
+12:55:46	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-content/plugins/wonderplugin-pdf-embed/pdfjslight/build/pdf.js?v=1.9
+12:55:47	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-content/plugins/wonderplugin-pdf-embed/pdfjslight/web/viewer.js?v=1.9
+12:55:49	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fhow-mobile-phones-could-help-trace-the-spread-of-covid-infections%2F
+12:55:50	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fvmblog-expert-interviews-siavash-alamouti-of-mimik-talks-edge-cloud%2F
+12:55:52	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fsiavash-alamouti-drive-to-decentralize-the-cloud%2F
+12:55:54	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Ffuture-of-mimik%2F
+12:55:56	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fprinciples-of-decentralization-2%2F
+12:55:57	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Funleashing-computing-power-w-decentralization-edge-cloud-computing%2F
+12:55:59	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fdecentralization-its-drivers%2F
+12:56:01	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fbenefits-of-decentralization%2F
+12:56:03	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fdecentralization-people%2F
+12:56:04	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fprinciples-of-decentralization%2F
+12:56:06	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fchallenges-of-decentralization-digital-freedom%2F
+12:56:08	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fa-pragmatic-approach-to-cloud-decentralization-hanoi-vietnam%2F
+12:56:09	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fis-5g-the-answer-to-central-cloud-challenges%2F
+12:56:11	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fdecentralization-of-cloud-siavash-alamoutis-keynote-at-pimrc-2017-in-montreal-canada%2F
+12:56:13	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fmade-in-bc-app-for-contact-tracing-pandimik-on-global-news-canada%2F
+12:56:15	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fare-developers-ready-for-edge-cloud-computing%2F
+12:56:16	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fidg-edge-computing-summit-2021-event-south-korea%2F
+12:56:17	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/pages/11 (from https://mimik.com/products/)
+12:56:18	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fprivacy-concerns-about-covid-tracing-app%2F
+12:56:19	Warning: 	HTML file (25795 bytes) retransferred due to lack of cache: https://mimik.com/author/sam/feed/
+12:56:20	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fedge-computing-ai-summit-2021%2F
+12:56:22	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fdiscover-hybrid-edgecloud-application-in-business-and-it%2F
+12:56:24	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fsingularity-university-of-south-africa-summit-2021%2F
+12:56:25	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/pages/4403 (from https://mimik.com/sectors/industrial-automation/)
+12:56:26	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fmontreal-digital-book-2021%2F
+12:56:26	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fentrepreneurship-innovation-ieee-5g-forum%2F
+12:56:27	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fstate-of-the-stack-2021%2F
+12:56:28	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Ffay-arjomandi-11-with-cathie-wood-2%2F
+12:56:29	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fdigital-transformation%2F
+12:56:29	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Finteroperability-and-ecosystem%2F
+12:56:31	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fdata-privacy%2F
+12:56:31	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fhybrid-edgecloud-ai-enabled-applications%2F
+12:56:32	Warning: 	HTML file (202329 bytes) retransferred due to lack of cache: https://mimik.com/category/blog/page/2/
+12:56:33	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fmimik-hybrid-edge-cloud-leveraging-aws-to-support-edge-microservice-mesh%2F
+12:56:33	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2F5g-verizon-event%2F
+12:56:35	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fedgesdk-familiar-apis%2F
+12:56:35	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fmicroservice-based-solutions-in-a-hybrid-edge-cloud-environment%2F
+12:56:35	Warning: 	Link https://mimik.com/category/blog/page/2/ not scanned (follow robots meta tag)
+12:56:37	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fwhere-to-run-microservices%2F
+12:56:37	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fedgesdk-updating-existing-applications%2F
+12:56:38	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/categories/61 (from https://mimik.com/category/blog/)
+12:56:39	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Ftransitioning-to-microservices%2F
+12:56:39	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fmicroservices-edge-cloud-computing-michel-burger%2F
+12:56:40	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/categories/56 (from https://mimik.com/category/whitepapers/)
+12:56:41	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fwho-would-benefit-from-edgesdk%2F
+12:56:41	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fwhat-is-mimik-edgesdk%2F
+12:56:42	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/categories/52 (from https://mimik.com/category/news/)
+12:56:42	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fwhat-is-hybrid-edgecloud-and-why-will-it-change-the-way-we-develop-apps%2F
+12:56:43	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fit-and-business-innovation-with-edge-computing-trends%2F
+12:56:44	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Ffay-arjomandi-11-with-cathie-wood%2F
+13:12:37	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Ffay-arjomandi-11-with-cathie-wood-why-have-you-decided-to-invest-in-mimik%2F
+13:12:39	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/pages/17 (from https://mimik.com/about-mimik/)
+13:12:39	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fforecasting-market-growth-rates-based-on-production-costs%2F
+13:12:39	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Ffuture-of-investment-is-investing-in-the-future%2F
+13:12:40	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Ffay-arjomandi-recognized-as-concordia-university-alumni-of-the-year%2F
+13:12:41	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fdefining-edge-and-hybrid-edgecloud-blog%2F
+13:12:42	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fdefining-edge-and-hybrid-edgecloud%2F
+13:12:43	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fhow-the-5g-technology-landscape-reaches-early-success-level-2%2F
+13:12:43	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fwhat-is-mimik-hybrid-edgecloud-platform%2F
+13:12:45	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fmimik-access-wifi-beaming-adding-friends-part-5-6%2F
+13:12:45	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fmimik-access-expire-beam-part-6-6%2F
+13:12:47	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fmimik-access-adding-shared-content-part-3-6%2F
+13:12:47	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fmimik-access-hosted-content-part-4-6%2F
+13:12:58	Warning: 	HTML file (174057 bytes) retransferred due to lack of cache: https://mimik.com/house-of-commons-of-canada-on-the-outbreak-of-the-corona-virus-w-google-mimik-ibm-short-ver/
+13:13:55	Warning: 	Retry after error -5 (Unable to get server's address: nodename nor servname provided, or not known) at link https://stg-2x.mimik.com/wp-content/uploads/2023/10/01-1024x536.jpg (from https://mimik.com/endpoint-device-security-the-missing-link-in-sase/)
+13:14:17	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2023/10/02-1024x581.jpg (from https://mimik.com/endpoint-device-security-the-missing-link-in-sase/)
+13:14:20	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2023/10/03-1024x623.jpg (from https://mimik.com/endpoint-device-security-the-missing-link-in-sase/)
+13:16:04	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/78891 (from https://mimik.com/a-primer-to-geolocation-detection-on-the-edge/)
+13:16:20	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2023/01/table-768x290.png (from https://mimik.com/a-primer-to-geolocation-detection-on-the-edge/)
+13:17:06	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2022/07/lamp.png (from https://mimik.com/a-primer-to-geolocation-detection-on-the-edge/)
+13:17:13	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2022/11/Picture1.png (from https://mimik.com/understanding-the-limits-of-replication-and-redundancy-under-edge-architectures/)
+13:17:24	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2022/11/Picture2.png (from https://mimik.com/understanding-the-limits-of-replication-and-redundancy-under-edge-architectures/)
+13:17:40	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2022/11/Picture3.png (from https://mimik.com/understanding-the-limits-of-replication-and-redundancy-under-edge-architectures/)
+13:18:27	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2022/11/Picture4.png (from https://mimik.com/understanding-the-limits-of-replication-and-redundancy-under-edge-architectures/)
+13:18:32	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2022/10/img1.png (from https://mimik.com/understanding-the-limitations-of-using-kubernetes-at-the-edge/)
+13:18:44	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2022/10/img2.png (from https://mimik.com/understanding-the-limitations-of-using-kubernetes-at-the-edge/)
+13:18:59	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2022/10/img3.png (from https://mimik.com/understanding-the-limitations-of-using-kubernetes-at-the-edge/)
+13:19:48	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2022/07/information-exchange.png (from https://mimik.com/taking-a-device-centric-approach-to-edge-computing/)
+13:19:51	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2022/07/microservices.png (from https://mimik.com/taking-a-device-centric-approach-to-edge-computing/)
+13:19:54	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2022/07/data.png (from https://mimik.com/taking-a-device-centric-approach-to-edge-computing/)
+13:20:03	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2022/07/sharing-data.png (from https://mimik.com/taking-a-device-centric-approach-to-edge-computing/)
+13:20:19	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2022/07/device.png (from https://mimik.com/taking-a-device-centric-approach-to-edge-computing/)
+13:21:07	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2022/04/66-150x150-1.png (from https://mimik.com/unlocking-the-next-gen-of-apps-for-the-hyper-connected-world/)
+13:21:09	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/74395 (from https://mimik.com/how-to-address-safety-and-security-for-software-defined-vehicles/)
+13:21:23	Warning: 	HTML file (153208 bytes) retransferred due to lack of cache: https://mimik.com/edge-cloud-use-cases/
+13:21:26	Error: 	"Not Found" (404) at link https://mimik.com/edge-cloud-use-cases/ (from https://mimik.com/as-network-chokes/)
+13:24:54	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/our-events/81494 (from https://mimik.com/our-events/idg-korea-edge-computing-summit-2021-event/)
+13:28:38	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/awsm_job_openings/3558 (from https://mimik.com/jobs/full-stack-developer/)
+13:28:57	Error: 	"Not Found" (404) at link https://mimik.com/wp-json/wp/v2/users/13 (from https://mimik.com/author/kimiar/)
+13:28:58	Error: 	"Not Found" (404) at link https://mimik.com/wp-json/wp/v2/users/7 (from https://mimik.com/author/siavash/)
+13:29:03	Error: 	"Not Found" (404) at link https://mimik.com/wp-json/wp/v2/users/12 (from https://mimik.com/author/mimik/)
+13:29:12	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/categories/85 (from https://mimik.com/category/events/)
+13:29:15	Error: 	"Not Found" (404) at link https://mimik.com/wp-json/wp/v2/users/9 (from https://mimik.com/author/michel/)
+13:29:19	Error: 	"Not Found" (404) at link https://mimik.com/wp-json/wp/v2/users/8 (from https://mimik.com/author/fay/)
+13:29:20	Error: 	"Not Found" (404) at link https://mimik.com/wp-json/wp/v2/users/10 (from https://mimik.com/author/bob/)
+13:30:43	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/52041 (from https://mimik.com/siavash-alamouti-drive-to-decentralize-the-cloud/)
+13:31:11	Error: 	"Not Found" (404) at link https://mimik.com/wp-json/wp/v2/users/11 (from https://mimik.com/author/sam/)
+13:31:58	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2021/03/zdeda-768x81.png (from https://mimik.com/edge-computing-ai-summit-2021/)
+13:32:00	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2021/03/sam-armani-300x300.png (from https://mimik.com/edge-computing-ai-summit-2021/)
+13:32:04	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/elementor/thumbs/nitu-kaushal-p3mmuqqaww6raaxzdqf66qx6ddo0dap8ofswlbvsao.png (from https://mimik.com/edge-computing-ai-summit-2021/)
+13:32:32	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/elementor/thumbs/jason-p3mmvv5d2rq35jb9tpw4nypzwy4ska5p5zus887uv4.png (from https://mimik.com/edge-computing-ai-summit-2021/)
+13:33:17	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/elementor/thumbs/vera-p3mmx3brzzekb7j3nqzlf5knu231m21302ils8ecqo.png (from https://mimik.com/edge-computing-ai-summit-2021/)
+13:33:19	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2021/03/lladiko.png (from https://mimik.com/edge-computing-ai-summit-2021/)
+13:33:22	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/elementor/thumbs/nutukaushal-p3mn01jjg9fyr58tfiwfqwrqyljiruqr2o8h0i0v7k.png (from https://mimik.com/edge-computing-ai-summit-2021/)
+13:33:50	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/elementor/thumbs/andreay-p3mn1anskb5q8ffa42ej2ldvh3d51bpv8vjs1s5yww.png (from https://mimik.com/edge-computing-ai-summit-2021/)
+13:34:34	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2021/03/Group-86.png (from https://mimik.com/discover-hybrid-edgecloud-application-in-business-and-it/)
+13:34:36	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2021/03/fay-rojmandi-webinar-254x300.png (from https://mimik.com/discover-hybrid-edgecloud-application-in-business-and-it/)
+13:34:39	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2021/03/mainshah-237x300.png (from https://mimik.com/discover-hybrid-edgecloud-application-in-business-and-it/)
+13:35:09	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2021/03/rob-high-237x300.png (from https://mimik.com/discover-hybrid-edgecloud-application-in-business-and-it/)
+13:35:51	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2021/03/michelburger-248x300.png (from https://mimik.com/discover-hybrid-edgecloud-application-in-business-and-it/)
+13:35:57	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2021/10/Panel-keynote-1536x130.png (from https://mimik.com/montreal-digital-book-2021/)
+13:36:26	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2021/10/Panel-disscusion-1536x122.png (from https://mimik.com/montreal-digital-book-2021/)
+13:36:26	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2021/10/mimik-mtl-michel-patrick-rob-web-banner-1808x506-1-1024x286.png (from https://mimik.com/montreal-digital-book-2021/)
+13:36:28	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2021/10/web-banner-IEEE-5G-forum-michel-1808x506-1-1024x287.png (from https://mimik.com/entrepreneurship-innovation-ieee-5g-forum/)
+13:36:30	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/elementor/thumbs/StephanieAtkinson-pb8aav6mjm7ie4y32kcza0pkw8hobk1r5h18ebyvns.png (from https://mimik.com/state-of-the-stack-2021/)
+13:36:30	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2021/08/SamArmani.png (from https://mimik.com/state-of-the-stack-2021/)
+13:36:30	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/elementor/thumbs/Sanjaykumar-pb8abgswwt13t62okbpedd96k3j48lfkwg1efp2too.png (from https://mimik.com/state-of-the-stack-2021/)
+13:36:30	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/elementor/thumbs/MattTrifiro--pb8achgmbcfadylfm9jukm05q4ifksh41hhc5hkgy0.png (from https://mimik.com/state-of-the-stack-2021/)
+13:36:31	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2021/06/Group-115@2x-1.png (from https://mimik.com/fay-arjomandi-11-with-cathie-wood-2/)
+13:36:31	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2021/06/CathieWood@2x-1-300x300.png (from https://mimik.com/fay-arjomandi-11-with-cathie-wood-2/)
+13:37:11	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2021/03/5g-webanner-1695x480-1-1024x290.png (from https://mimik.com/5g-verizon-event/)
+13:37:11	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2021/03/fay-arjomandi-285x300.png (from https://mimik.com/5g-verizon-event/)
+13:37:11	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/elementor/thumbs/valerie-clark-p3q218tfk0oqmvky02laz7soxqkhf2d9d6rqvr4ki0.png (from https://mimik.com/5g-verizon-event/)
+13:37:11	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/elementor/thumbs/indrani-deb-p3q233jz1983j6w06dfte8yf43fjlkq7ad37yedm88.png (from https://mimik.com/5g-verizon-event/)
+13:37:11	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/elementor/thumbs/joshua-ness-p3q25olzturhgl4u2znvr3h1x8ovrlzmn5oagsjn48.png (from https://mimik.com/5g-verizon-event/)
+13:38:31	Error: 	"Not Found" (404) at link https://mimik.com/wp-content/themes/bricks/assets/fonts/themify/themify.eot? (from https://mimik.com/wp-content/themes/bricks/assets/css/libs/themify-icons.min.css?ver=1710789719)
+13:40:30	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2023/10/01-1024x536.jpg (from https://mimik.com/endpoint-device-security-the-missing-link-in-sase/)
+13:41:47	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2023/10/02-1024x581.jpg (from https://mimik.com/endpoint-device-security-the-missing-link-in-sase/)
+13:41:48	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2023/10/03-1024x623.jpg (from https://mimik.com/endpoint-device-security-the-missing-link-in-sase/)
+13:43:07	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2023/01/table-768x290.png (from https://mimik.com/a-primer-to-geolocation-detection-on-the-edge/)
+13:43:07	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2022/07/lamp.png (from https://mimik.com/a-primer-to-geolocation-detection-on-the-edge/)
+13:44:26	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2022/11/Picture1.png (from https://mimik.com/understanding-the-limits-of-replication-and-redundancy-under-edge-architectures/)
+13:44:26	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2022/11/Picture2.png (from https://mimik.com/understanding-the-limits-of-replication-and-redundancy-under-edge-architectures/)
+13:44:28	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2022/11/Picture3.png (from https://mimik.com/understanding-the-limits-of-replication-and-redundancy-under-edge-architectures/)
+13:45:43	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2022/11/Picture4.png (from https://mimik.com/understanding-the-limits-of-replication-and-redundancy-under-edge-architectures/)
+13:45:44	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2022/10/img1.png (from https://mimik.com/understanding-the-limitations-of-using-kubernetes-at-the-edge/)
+13:45:45	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2022/10/img2.png (from https://mimik.com/understanding-the-limitations-of-using-kubernetes-at-the-edge/)
+13:47:00	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2022/10/img3.png (from https://mimik.com/understanding-the-limitations-of-using-kubernetes-at-the-edge/)
+13:47:01	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2022/07/information-exchange.png (from https://mimik.com/taking-a-device-centric-approach-to-edge-computing/)
+13:47:02	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fdeep-tech-sustainable-tech-mtl-connect-2020%2F
+13:47:02	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2022/07/microservices.png (from https://mimik.com/taking-a-device-centric-approach-to-edge-computing/)
+13:47:02	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2022/07/data.png (from https://mimik.com/taking-a-device-centric-approach-to-edge-computing/)
+13:47:02	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2022/07/sharing-data.png (from https://mimik.com/taking-a-device-centric-approach-to-edge-computing/)
+13:47:02	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2022/07/device.png (from https://mimik.com/taking-a-device-centric-approach-to-edge-computing/)
+13:47:02	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2022/04/66-150x150-1.png (from https://mimik.com/unlocking-the-next-gen-of-apps-for-the-hyper-connected-world/)
+13:47:02	Warning: 	File not parsed, looks like binary: https://mimik.com/wp-content/plugins/wonderplugin-pdf-embed/pdfjslight/web/images/grab.cur
+13:47:02	Warning: 	File not parsed, looks like binary: https://mimik.com/wp-content/plugins/wonderplugin-pdf-embed/pdfjslight/web/images/grabbing.cur
+13:47:02	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2021/03/zdeda-768x81.png (from https://mimik.com/edge-computing-ai-summit-2021/)
+13:47:02	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2021/03/sam-armani-300x300.png (from https://mimik.com/edge-computing-ai-summit-2021/)
+13:47:02	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/elementor/thumbs/nitu-kaushal-p3mmuqqaww6raaxzdqf66qx6ddo0dap8ofswlbvsao.png (from https://mimik.com/edge-computing-ai-summit-2021/)
+13:47:02	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/elementor/thumbs/jason-p3mmvv5d2rq35jb9tpw4nypzwy4ska5p5zus887uv4.png (from https://mimik.com/edge-computing-ai-summit-2021/)
+13:47:02	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/elementor/thumbs/vera-p3mmx3brzzekb7j3nqzlf5knu231m21302ils8ecqo.png (from https://mimik.com/edge-computing-ai-summit-2021/)
+13:47:02	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2021/03/lladiko.png (from https://mimik.com/edge-computing-ai-summit-2021/)
+13:47:02	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/elementor/thumbs/nutukaushal-p3mn01jjg9fyr58tfiwfqwrqyljiruqr2o8h0i0v7k.png (from https://mimik.com/edge-computing-ai-summit-2021/)
+13:47:02	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/elementor/thumbs/andreay-p3mn1anskb5q8ffa42ej2ldvh3d51bpv8vjs1s5yww.png (from https://mimik.com/edge-computing-ai-summit-2021/)
+13:47:02	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2021/03/Group-86.png (from https://mimik.com/discover-hybrid-edgecloud-application-in-business-and-it/)
+13:47:02	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2021/03/fay-rojmandi-webinar-254x300.png (from https://mimik.com/discover-hybrid-edgecloud-application-in-business-and-it/)
+13:47:02	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2021/03/mainshah-237x300.png (from https://mimik.com/discover-hybrid-edgecloud-application-in-business-and-it/)
+13:47:02	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2021/03/rob-high-237x300.png (from https://mimik.com/discover-hybrid-edgecloud-application-in-business-and-it/)
+13:47:02	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2021/03/michelburger-248x300.png (from https://mimik.com/discover-hybrid-edgecloud-application-in-business-and-it/)
+13:47:02	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2021/10/Panel-keynote-1536x130.png (from https://mimik.com/montreal-digital-book-2021/)
+13:47:02	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2021/10/Panel-disscusion-1536x122.png (from https://mimik.com/montreal-digital-book-2021/)
+13:47:02	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2021/10/mimik-mtl-michel-patrick-rob-web-banner-1808x506-1-1024x286.png (from https://mimik.com/montreal-digital-book-2021/)
+13:47:02	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2021/10/web-banner-IEEE-5G-forum-michel-1808x506-1-1024x287.png (from https://mimik.com/entrepreneurship-innovation-ieee-5g-forum/)
+13:47:02	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/elementor/thumbs/StephanieAtkinson-pb8aav6mjm7ie4y32kcza0pkw8hobk1r5h18ebyvns.png (from https://mimik.com/state-of-the-stack-2021/)
+13:47:02	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2021/08/SamArmani.png (from https://mimik.com/state-of-the-stack-2021/)
+13:47:02	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/elementor/thumbs/Sanjaykumar-pb8abgswwt13t62okbpedd96k3j48lfkwg1efp2too.png (from https://mimik.com/state-of-the-stack-2021/)
+13:47:02	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/elementor/thumbs/MattTrifiro--pb8achgmbcfadylfm9jukm05q4ifksh41hhc5hkgy0.png (from https://mimik.com/state-of-the-stack-2021/)
+13:47:02	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2021/06/Group-115@2x-1.png (from https://mimik.com/fay-arjomandi-11-with-cathie-wood-2/)
+13:47:02	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2021/06/CathieWood@2x-1-300x300.png (from https://mimik.com/fay-arjomandi-11-with-cathie-wood-2/)
+13:47:02	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2021/03/5g-webanner-1695x480-1-1024x290.png (from https://mimik.com/5g-verizon-event/)
+13:47:02	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/2021/03/fay-arjomandi-285x300.png (from https://mimik.com/5g-verizon-event/)
+13:47:02	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/elementor/thumbs/valerie-clark-p3q218tfk0oqmvky02laz7soxqkhf2d9d6rqvr4ki0.png (from https://mimik.com/5g-verizon-event/)
+13:47:02	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/elementor/thumbs/indrani-deb-p3q233jz1983j6w06dfte8yf43fjlkq7ad37yedm88.png (from https://mimik.com/5g-verizon-event/)
+13:47:02	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://stg-2x.mimik.com/wp-content/uploads/elementor/thumbs/joshua-ness-p3q25olzturhgl4u2znvr3h1x8ovrlzmn5oagsjn48.png (from https://mimik.com/5g-verizon-event/)
+13:47:02	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/55993 (from https://mimik.com/deep-tech-sustainable-tech-mtl-connect-2020/)
+13:47:03	Warning: 	Moved Permanently for https://mimik.com/?p=55993
+13:47:03	Warning: 	File has moved from https://mimik.com/?p=55993 to https://mimik.com/deep-tech-sustainable-tech-mtl-connect-2020/
+13:47:06	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://stg-2x.mimik.com/wp-content/uploads/2023/10/01-1024x536.jpg (from https://mimik.com/endpoint-device-security-the-missing-link-in-sase/)
+13:47:06	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://stg-2x.mimik.com/wp-content/uploads/2023/10/02-1024x581.jpg (from https://mimik.com/endpoint-device-security-the-missing-link-in-sase/)
+13:47:06	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://stg-2x.mimik.com/wp-content/uploads/2023/10/03-1024x623.jpg (from https://mimik.com/endpoint-device-security-the-missing-link-in-sase/)
+13:47:06	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://stg-2x.mimik.com/wp-content/uploads/2023/01/table-768x290.png (from https://mimik.com/a-primer-to-geolocation-detection-on-the-edge/)
+13:47:06	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://stg-2x.mimik.com/wp-content/uploads/2022/07/lamp.png (from https://mimik.com/a-primer-to-geolocation-detection-on-the-edge/)
+13:47:06	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://stg-2x.mimik.com/wp-content/uploads/2022/11/Picture1.png (from https://mimik.com/understanding-the-limits-of-replication-and-redundancy-under-edge-architectures/)
+13:47:06	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://stg-2x.mimik.com/wp-content/uploads/2022/11/Picture2.png (from https://mimik.com/understanding-the-limits-of-replication-and-redundancy-under-edge-architectures/)
+13:47:06	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://stg-2x.mimik.com/wp-content/uploads/2022/11/Picture3.png (from https://mimik.com/understanding-the-limits-of-replication-and-redundancy-under-edge-architectures/)
+13:47:06	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://stg-2x.mimik.com/wp-content/uploads/2022/11/Picture4.png (from https://mimik.com/understanding-the-limits-of-replication-and-redundancy-under-edge-architectures/)
+13:47:06	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://stg-2x.mimik.com/wp-content/uploads/2022/10/img1.png (from https://mimik.com/understanding-the-limitations-of-using-kubernetes-at-the-edge/)
+13:47:06	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://stg-2x.mimik.com/wp-content/uploads/2022/10/img2.png (from https://mimik.com/understanding-the-limitations-of-using-kubernetes-at-the-edge/)
+13:47:06	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://stg-2x.mimik.com/wp-content/uploads/2022/10/img3.png (from https://mimik.com/understanding-the-limitations-of-using-kubernetes-at-the-edge/)
+13:47:06	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://stg-2x.mimik.com/wp-content/uploads/2022/07/information-exchange.png (from https://mimik.com/taking-a-device-centric-approach-to-edge-computing/)
+13:47:06	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://stg-2x.mimik.com/wp-content/uploads/2022/07/microservices.png (from https://mimik.com/taking-a-device-centric-approach-to-edge-computing/)
+13:47:06	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://stg-2x.mimik.com/wp-content/uploads/2022/07/data.png (from https://mimik.com/taking-a-device-centric-approach-to-edge-computing/)
+13:47:06	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://stg-2x.mimik.com/wp-content/uploads/2022/07/sharing-data.png (from https://mimik.com/taking-a-device-centric-approach-to-edge-computing/)
+13:47:06	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://stg-2x.mimik.com/wp-content/uploads/2022/07/device.png (from https://mimik.com/taking-a-device-centric-approach-to-edge-computing/)
+13:47:06	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://stg-2x.mimik.com/wp-content/uploads/2022/04/66-150x150-1.png (from https://mimik.com/unlocking-the-next-gen-of-apps-for-the-hyper-connected-world/)
+13:47:06	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://stg-2x.mimik.com/wp-content/uploads/2021/03/zdeda-768x81.png (from https://mimik.com/edge-computing-ai-summit-2021/)
+13:47:06	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://stg-2x.mimik.com/wp-content/uploads/2021/03/sam-armani-300x300.png (from https://mimik.com/edge-computing-ai-summit-2021/)
+13:47:06	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://stg-2x.mimik.com/wp-content/uploads/elementor/thumbs/nitu-kaushal-p3mmuqqaww6raaxzdqf66qx6ddo0dap8ofswlbvsao.png (from https://mimik.com/edge-computing-ai-summit-2021/)
+13:47:06	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://stg-2x.mimik.com/wp-content/uploads/elementor/thumbs/jason-p3mmvv5d2rq35jb9tpw4nypzwy4ska5p5zus887uv4.png (from https://mimik.com/edge-computing-ai-summit-2021/)
+13:47:06	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://stg-2x.mimik.com/wp-content/uploads/elementor/thumbs/vera-p3mmx3brzzekb7j3nqzlf5knu231m21302ils8ecqo.png (from https://mimik.com/edge-computing-ai-summit-2021/)
+13:47:06	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://stg-2x.mimik.com/wp-content/uploads/2021/03/lladiko.png (from https://mimik.com/edge-computing-ai-summit-2021/)
+13:47:06	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://stg-2x.mimik.com/wp-content/uploads/elementor/thumbs/nutukaushal-p3mn01jjg9fyr58tfiwfqwrqyljiruqr2o8h0i0v7k.png (from https://mimik.com/edge-computing-ai-summit-2021/)
+13:47:06	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://stg-2x.mimik.com/wp-content/uploads/elementor/thumbs/andreay-p3mn1anskb5q8ffa42ej2ldvh3d51bpv8vjs1s5yww.png (from https://mimik.com/edge-computing-ai-summit-2021/)
+13:47:06	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://stg-2x.mimik.com/wp-content/uploads/2021/03/Group-86.png (from https://mimik.com/discover-hybrid-edgecloud-application-in-business-and-it/)
+13:47:06	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://stg-2x.mimik.com/wp-content/uploads/2021/03/fay-rojmandi-webinar-254x300.png (from https://mimik.com/discover-hybrid-edgecloud-application-in-business-and-it/)
+13:47:06	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://stg-2x.mimik.com/wp-content/uploads/2021/03/mainshah-237x300.png (from https://mimik.com/discover-hybrid-edgecloud-application-in-business-and-it/)
+13:47:06	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://stg-2x.mimik.com/wp-content/uploads/2021/03/rob-high-237x300.png (from https://mimik.com/discover-hybrid-edgecloud-application-in-business-and-it/)
+13:47:06	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://stg-2x.mimik.com/wp-content/uploads/2021/03/michelburger-248x300.png (from https://mimik.com/discover-hybrid-edgecloud-application-in-business-and-it/)
+13:47:06	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://stg-2x.mimik.com/wp-content/uploads/2021/10/Panel-keynote-1536x130.png (from https://mimik.com/montreal-digital-book-2021/)
+13:47:06	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://stg-2x.mimik.com/wp-content/uploads/2021/10/Panel-disscusion-1536x122.png (from https://mimik.com/montreal-digital-book-2021/)
+13:47:06	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://stg-2x.mimik.com/wp-content/uploads/2021/10/mimik-mtl-michel-patrick-rob-web-banner-1808x506-1-1024x286.png (from https://mimik.com/montreal-digital-book-2021/)
+13:47:06	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://stg-2x.mimik.com/wp-content/uploads/2021/10/web-banner-IEEE-5G-forum-michel-1808x506-1-1024x287.png (from https://mimik.com/entrepreneurship-innovation-ieee-5g-forum/)
+13:47:06	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://stg-2x.mimik.com/wp-content/uploads/elementor/thumbs/StephanieAtkinson-pb8aav6mjm7ie4y32kcza0pkw8hobk1r5h18ebyvns.png (from https://mimik.com/state-of-the-stack-2021/)
+13:47:06	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://stg-2x.mimik.com/wp-content/uploads/2021/08/SamArmani.png (from https://mimik.com/state-of-the-stack-2021/)
+13:47:06	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://stg-2x.mimik.com/wp-content/uploads/elementor/thumbs/Sanjaykumar-pb8abgswwt13t62okbpedd96k3j48lfkwg1efp2too.png (from https://mimik.com/state-of-the-stack-2021/)
+13:47:06	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://stg-2x.mimik.com/wp-content/uploads/elementor/thumbs/MattTrifiro--pb8achgmbcfadylfm9jukm05q4ifksh41hhc5hkgy0.png (from https://mimik.com/state-of-the-stack-2021/)
+13:47:06	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://stg-2x.mimik.com/wp-content/uploads/2021/06/Group-115@2x-1.png (from https://mimik.com/fay-arjomandi-11-with-cathie-wood-2/)
+13:47:06	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://stg-2x.mimik.com/wp-content/uploads/2021/06/CathieWood@2x-1-300x300.png (from https://mimik.com/fay-arjomandi-11-with-cathie-wood-2/)
+13:47:06	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://stg-2x.mimik.com/wp-content/uploads/2021/03/5g-webanner-1695x480-1-1024x290.png (from https://mimik.com/5g-verizon-event/)
+13:47:06	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://stg-2x.mimik.com/wp-content/uploads/2021/03/fay-arjomandi-285x300.png (from https://mimik.com/5g-verizon-event/)
+13:47:06	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://stg-2x.mimik.com/wp-content/uploads/elementor/thumbs/valerie-clark-p3q218tfk0oqmvky02laz7soxqkhf2d9d6rqvr4ki0.png (from https://mimik.com/5g-verizon-event/)
+13:47:06	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://stg-2x.mimik.com/wp-content/uploads/elementor/thumbs/indrani-deb-p3q233jz1983j6w06dfte8yf43fjlkq7ad37yedm88.png (from https://mimik.com/5g-verizon-event/)
+13:47:06	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://stg-2x.mimik.com/wp-content/uploads/elementor/thumbs/joshua-ness-p3q25olzturhgl4u2znvr3h1x8ovrlzmn5oagsjn48.png (from https://mimik.com/5g-verizon-event/)
+13:47:06	Error: 	"Unauthorized" (401) at link https://mimik.com/wp-json/wp/v2/posts/55958 (from https://mimik.com/mtl-connect-2020/)
+13:47:06	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://mimik.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmimik.com%2Fmtl-connect-2020%2F
+13:47:07	Warning: 	Moved Permanently for https://mimik.com/?p=55958
+13:47:07	Warning: 	File has moved from https://mimik.com/?p=55958 to https://mimik.com/mtl-connect-2020/
+
+HTTrack Website Copier/3.49-2 mirror complete in 1 hours 20 minutes 57 seconds : 1361 links scanned, 1045 files written (241997409 bytes overall) [116937495 bytes received at 24076 bytes/sec], 43213766 bytes transferred using HTTP compression in 571 files, ratio 20%, 7.5 requests per connection
+(257 errors, 641 warnings, 0 messages)

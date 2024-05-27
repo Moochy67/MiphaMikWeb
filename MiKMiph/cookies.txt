@@ -1,0 +1,13 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+.hsforms.net	TRUE	/	FALSE	1999999999	__cf_bm	xODgmOKuFSWBbXTYpW5IADzbbFKmqroz5AL2SQheZKY-1716838034-1.0.1.1-V4shhixoxdZV8cPbTQzc9_6fdTW9CjB.l5TQ4gkxvOnxcS1QRbJoDN64WqiV8Nhw1RQo3OVQkEl0GEgDUqPtPQ
+js.hsforms.net	TRUE	/	FALSE	1999999999	SameSite	None
+px.ads.linkedin.com	TRUE	/	FALSE	1999999999	li_sugr	468e9beb-600c-43d7-bddd-df9e97aa2ec8
+.linkedin.com	TRUE	/	FALSE	1999999999	lidc	b=TGST01:s=T:r=T:a=T:p=T:g=3340:u=1:x=1:i=1716838032:t=1716924432:v=2:sig=AQEfZzIazIqQVJy_Vi2gqwHk25yL4zF2"
+.linkedin.com	TRUE	/	FALSE	1999999999	bcookie	v=2&b057bb62-4bc6-4dc9-845b-9f28b86c2c86"
+px.ads.linkedin.com	TRUE	/	FALSE	1999999999	SameSite	None
+.google.com	TRUE	/	FALSE	1999999999	AEC	AQTF6Hy1kvCZdWZ9XBB5TdVgV-SPggPGAnXoZo3KbEk1z_YDxAKxYMaaSg
+www.google.com	TRUE	/	FALSE	1999999999	SameSite	lax
+.google.com	TRUE	/	FALSE	1999999999	NID	514=szAdu4oYVDdp-0svzjwPugWl2VxUUtGbqxj50quSPG6q7kpvb-GihjkxGyiZFuvcy9LOHIEJ4jrWuj9GPj-FYU4LCFRITlUt1SPNNWdpjckwZbp0QHUX1vwT8grco8-2loIuwk0odYGfhdHI_Yqy9ALHGqHVuO4WllPY12TAY_apYWuqu9vWtttEig0K8jgH_7MunGRf-vEKOGTLhBb-C8Gnq6zKRUhsyJYr
+.google.com	TRUE	/	FALSE	1999999999	1P_JAR	2024-05-27-19
+
